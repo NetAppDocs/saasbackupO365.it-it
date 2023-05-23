@@ -1,0 +1,85 @@
+---
+sidebar: sidebar 
+permalink: task_migrate_data.html 
+keywords: netapp, saas backup, microsoft office 365, sharepoint, onedrive for business, exchange, groups, migrate, data, export 
+summary: Per prepararsi alla fine della licenza con SaaS Backup per Microsoft 365, è possibile richiedere la migrazione dei dati su Amazon S3 o Microsoft Azure Blob Storage di proprietà del tenant. 
+---
+= Migrare i dati
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Per prepararsi alla fine della licenza con SaaS Backup per Microsoft 365, puoi richiedere la migrazione dei dati da Amazon S3 allo storage Amazon S3 di proprietà del tenant o da Microsoft Azure Blob a Microsoft Azure Blob Storage di proprietà del tenant.
+
+
+NOTE: La migrazione incrociata da Amazon S3 allo storage Microsoft Azure Blob o da Microsoft Azure Blob allo storage Amazon S3 non è supportata.
+
+Una volta completata la migrazione dei dati, puoi esportare i tuoi dati utilizzando NetApp SaaS Backup Bulk Export Tool. Accedi a. link:https://mysupport.netapp.com/site/tools["La pagina NetApp Support Tools"] E cerca NetApp SaaS Backup Bulk Export Tool.
+
+
+NOTE: La migrazione dei dati è un'attività di fine licenza. Tutti i tenant devono evitare qualsiasi forma di attività sui propri account SaaS Backup per evitare discrepanze di dati e metadati durante la migrazione dei dati. Al termine della migrazione dei dati, tutti i backup pianificati per il tenant verranno disattivati.
+
+*Requisito*: Per richiedere la migrazione dei dati, accedere con le credenziali dell'account tenant con le autorizzazioni Global Administrator. Gli altri ruoli utente non potranno accedere alla scheda migrazione dati nell'interfaccia utente.
+
+*Consiglio*: È necessario eseguire il provisioning dello storage di destinazione con una capacità sufficiente per memorizzare tutti i dati del cliente e aggiungere il 10% di capacità in più come buffer per lo storage dei metadati.
+
+.Fasi
+. Accedere a *Impostazioni account* image:gear_icon.png["icona ingranaggio"].
+. Selezionare la scheda *Data Migration* (migrazione dati).
+. In *Storage Details* (Dettagli storage), inserire le informazioni nei campi:
++
+[cols="20,20"]
+|===
+| Amazon S3 | Microsoft Azure 
+
+
+| Nome bucket | Nome account 
+
+
+| Regione | Nome del container 
+
+
+| Tasto di accesso | Access point 
+
+
+| Chiave segreta | Tasto di accesso 
+
+
+|  | Regione 
+|===
++
+
+NOTE: Gli utenti di Microsoft Azure devono impostare il livello di accesso pubblico su "Blob" per il container fornito in Storage Details.
+
+. Selezionare *verifica connessione*.
++
+Un segno di spunta verde indica che la connessione è in buone condizioni.
+
+. In *acconsenti*, selezionare la casella per accettare i termini e le condizioni della migrazione dei dati e selezionare *Invia*.
++
+I dati sono stati salvati correttamente. L'ID tenant è ora visibile in *Migration Status*.
+
++
+
+TIP: L'ID tenant è necessario quando si esportano i dati utilizzando il NetApp SaaS Backup Bulk Export Tool.
+
+
+
+*Ulteriori passaggi per SaaS Backup forniti da Amazon S3 bucket* dopo aver fornito il consenso, le note politiche e politiche sono ora visualizzate sotto il consenso. Seguire i passaggi successivi per completare la richiesta di migrazione dei dati.
+
+. Verificare e copiare la policy.
++
+image:policy-note-variables.png["Policy copiata con variabili IAM-user e di destinazione evidenziate"]
+
+. Vai al tuo account Amazon S3.
+. Allega la policy fornita in *Storage Details* al bucket di destinazione Amazon S3.
+. Tornare alla scheda *migrazione dati* in *Impostazioni account* in SaaS Backup per Microsoft 365.
+. In *Conferma policy*, selezionare la casella per confermare che il criterio è stato caricato nel bucket di destinazione, quindi selezionare *Invia*. Un segno di spunta verde indica che la richiesta di migrazione dei dati è stata completata e che la migrazione dei dati è ora in coda.
+
+
+Fare riferimento a *Migration Status* (Stato della migrazione) per monitorare l'avanzamento della migrazione. La durata della migrazione dipende da diversi fattori, come la quantità di dati e il numero di licenze di cui si dispone.

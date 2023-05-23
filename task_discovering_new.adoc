@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: task_discovering_new.html 
+keywords: netapp, saas backup, microsoft 365, discover, discovery, discovering, new, mailboxes, sites, groups, teams, shared, archive 
+summary: Con NetApp SaaS Backup per Microsoft 365 puoi gestire i tuoi account di servizio, scoprire nuovi account aggiunti e impostare le notifiche degli account. 
+---
+= Scopri nuove caselle postali, siti e gruppi
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È necessario che venga eseguita una sincronizzazione tra SaaS Backup e l'account Microsoft 365 per nuove caselle postali (incluse le caselle di posta condivise e di archiviazione), siti, gruppi e team che SaaS Backup deve rilevare. Per impostazione predefinita, la sincronizzazione viene eseguita automaticamente ogni 24 ore. Tuttavia, se si apportano modifiche e si desidera che il rilevamento venga eseguito prima della successiva *sincronizzazione automatica* pianificata, è possibile avviare una sincronizzazione immediata.
+
+.Fasi
+. Fare clic su image:services.gif["Schermata del pulsante servizi"] dal riquadro di navigazione di sinistra.
+. Fare clic sull'icona delle impostazioni di Microsoft 365.image:mso365_settings.gif["Schermata del pulsante Microsoft 365"]
+. Fare clic su *Sincronizza ora* accanto al servizio che si desidera sincronizzare.image:sync_now.png[""]I nuovi utenti, le cassette postali condivise e le cassette postali di archiviazione vengono rilevati e aggiunti in uno stato non protetto. Se si desidera eseguire il backup di utenti rilevati di recente, cassette postali condivise o cassette postali di archiviazione, è necessario modificare il criterio di backup degli utenti da non protetto a uno dei gruppi di livelli predefiniti.
+. Fare clic su *Conferma*.
+. Fare clic su *View the job progress* (Visualizza avanzamento del processo) per monitorare l'avanzamento del processo. Una volta completato il lavoro, è possibile fare clic su di esso in *Recent Completed Jobs* (lavori completati recenti) per visualizzare il numero di utenti aggiunti o rimossi durante la sincronizzazione. Le modifiche agli account utente sono indicate come segue:
++
+** Gli utenti *riscoperti* indicano il numero di account utente invariati.
+** *Disattivato* indica il numero di account utente cancellati.
+** *Utenti aggiunti di recente* indica il numero di nuovi account utente.
+
+
+

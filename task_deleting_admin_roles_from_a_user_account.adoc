@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: task_deleting_admin_roles_from_a_user_account.html 
+keywords: netapp, saas backup, microsoft 365, delete, deleted, deleting, role-based accounts, administrative roles, privileges, removing 
+summary: 'Se tutti i ruoli amministrativi vengono cancellati dall"account di un utente, l"utente viene disconnesso automaticamente da SaaS Backup per Microsoft 365.' 
+---
+= Eliminare tutti i ruoli amministrativi da un account utente
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se tutti i ruoli amministrativi vengono cancellati dall'account di un utente, l'utente viene disconnesso automaticamente da SaaS Backup per Microsoft 365.
+
+.Fasi
+. Fare clic sull'icona delle impostazioni image:configure_icon.gif["Schermata dell'icona di configurazione"] Accanto all'ID utente nella parte superiore sinistra della schermata.
+. Fare clic su *IMPOSTAZIONI ACCOUNT*.
+. Fare clic su *ROLE MANAGEMENT*.
+. Fare clic su *Delete User* (Elimina utente) accanto al nome utente che si desidera rimuovere.
+. Fare clic su *Sì*.
+

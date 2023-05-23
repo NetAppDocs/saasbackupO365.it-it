@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: concept_backup_settings.html 
+keywords: netapp, saas backup, microsoft 365, backup, setting, updating, autosync, enable, restore, recoverable, items, backup, list, views, version, history, workflows 
+summary: È possibile aggiornare le impostazioni di backup per controllare diverse opzioni di backup. Le impostazioni di backup disponibili variano in base al servizio. 
+---
+= Impostazioni di backup
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile aggiornare le impostazioni di backup per controllare diverse opzioni di backup. Le impostazioni di backup disponibili variano in base al servizio.
+
+
+
+== Impostazioni di backup per servizio
+
+[cols="12,64,24,24"]
+|===
+| Impostazioni di backup | Descrizione | Attivato | Disponibile in... 
+
+
+| Sincronizzazione automatica  a| 
+Attiva la sincronizzazione automatica pianificata di utenti appena aggiunti o eliminati, OneDrive o raccolte di siti ogni 24 ore.
+| Per impostazione predefinita  a| 
+* Microsoft Exchange Online
+* Microsoft SharePoint Online
+* Microsoft OneDrive per le aziende
+* Gruppi Microsoft 365
+
+
+
+
+| Attiva OneNote Backup  a| 
+Attiva il backup dei notebook OneNote.
+| Manualmente  a| 
+* Microsoft SharePoint Online
+* Microsoft OneDrive per le aziende
+
+
+
+
+| Abilitare il ripristino degli elementi ripristinabili  a| 
+Consente all'utente di ripristinare gli elementi ripristinabili di Microsoft Exchange.
+| Manualmente  a| 
+* Microsoft Exchange Online
+
+
+
+
+| Attiva il backup degli elementi ripristinabili  a| 
+Attiva il backup degli elementi ripristinabili di Microsoft Exchange. Solo la policy di backup di Tier 1 consente il backup degli elementi ripristinabili.
+| Manualmente  a| 
+* Microsoft Exchange Online
+
+
+
+
+| Includi flussi di lavoro  a| 
+Include i flussi di lavoro nel backup.
+| Manualmente  a| 
+* Microsoft SharePoint Online
+* Gruppi Microsoft 365
+
+
+
+
+| Includi viste elenco  a| 
+Include viste elenco nel backup.
+| Manualmente  a| 
+* Microsoft SharePoint Online
+* Gruppi Microsoft 365
+
+
+
+
+| Includi cronologia delle versioni  a| 
+Consente la manutenzione di più versioni di file nel backup.
+
+
+NOTE: Questa impostazione si applica solo ai singoli file. Non si applica a intere cartelle, Tier o servizi.
+| Per impostazione predefinita  a| 
+* Microsoft SharePoint Online
+* Microsoft OneDrive per le aziende
+* Gruppi Microsoft 365
+
+
+
+
+| Numero di versioni  a| 
+Imposta il numero di versioni dei file di backup da gestire. Per impostazione predefinita, viene eseguito automaticamente il backup della versione più recente, anche se questa impostazione non è attivata.
+| Impostare su 20 per impostazione predefinita  a| 
+* Microsoft SharePoint Online
+* Microsoft OneDrive per le aziende
+* Gruppi Microsoft 365
+
+
+|===
+
+
+== Aggiornare le impostazioni di backup
+
+.Fasi
+. Fare clic su *Services* (servizi) nel riquadro di navigazione a sinistra.
++
+image:services.gif["Schermata del pulsante servizi"]
+
+. Fare clic su Microsoft 365.
++
+image:mso365_settings.gif["Schermata del pulsante Microsoft 365"]
+
+. In *Manage Services* (Gestisci servizi), fare clic sull'icona delle impostazioni di backup image:configure_icon.gif["Schermata dell'icona di configurazione"] accanto al servizio da aggiornare. Viene visualizzato un elenco delle impostazioni di backup disponibili per il servizio selezionato.
+. Selezionare le impostazioni di backup desiderate.
+. Fare clic su *Conferma*.
+

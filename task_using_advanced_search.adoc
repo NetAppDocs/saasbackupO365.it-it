@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: task_using_advanced_search.html 
+keywords: netapp, saas backup, microsoft 365, search, searching, advanced search, perform, performing, exchange 
+summary: È possibile attivare la funzione Ricerca avanzata per cercare gli elementi di cui è stato eseguito il backup in Microsoft 365 Exchange Online. 
+---
+= Utilizza la ricerca avanzata per Microsoft Exchange Online
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile utilizzare *Ricerca avanzata* per Microsoft Exchange Online per cercare singoli elementi della mailbox condivisa e ripristinarli nella mailbox originale.
+
+Gli amministratori possono attivare *Ricerca avanzata* visitando il sito link:https://mysupport.netapp.com/["Supporto"] e l'invio di una richiesta. Puoi anche inviare un'e-mail al team di supporto SaaS Backup all'indirizzo saasbackupsupport@netapp.com.
+
+Dopo aver attivato *Ricerca avanzata*, è possibile attivare il portale self-service (SSP) per i singoli tenant. Se non si attiva *Ricerca avanzata* prima del primo backup, non vengono visualizzati risultati di ricerca.
+
+image:advanced_search_settings_exchange.png["Schermata delle impostazioni di ricerca avanzate"]
+
+* <<Attiva la ricerca avanzata>>
+* <<Eseguire una ricerca>>
+* <<Trova i lavori di ricerca precedenti>>
+
+
+
+
+== Attiva la ricerca avanzata
+
+È possibile attivare la funzione *Ricerca avanzata* in Impostazioni di ricerca avanzate.
+
+
+NOTE: Gli utenti con licenza e senza licenza possono utilizzare la funzione di ricerca avanzata, se attivata.
+
+.Fasi
+. Dalla dashboard, fare clic su *Advanced Search* (Ricerca avanzata) nel menu a sinistra.
+. Fare clic su *Advanced Search Settings* (Impostazioni di ricerca avanzate).
++
+** Per impostazione predefinita, l'elenco visualizza tutti gli utenti con licenza. Alternare tra *Mostra tutti gli utenti* e *Mostra solo utenti con licenza* per filtrare il tipo di utente nell'elenco.
+** Utilizzare lo strumento di ricerca e digitare almeno tre caratteri per trovare un utente univoco.
+
+
+. Per abilitare un utente, nella colonna *Ricerca avanzata*, selezionare *on*. La volta successiva che si protegge l'utente abilitato in un backup completo o incrementale, è possibile eseguire una ricerca di eventuali nuovi elementi di posta elettronica.
+. Fare clic su *Save Settings* (Salva impostazioni).
+. Per eseguire il backup degli utenti abilitati, visitare il sito Web link:task_scheduling_backup_or_changing_frequency.html["Pianificazione di un backup o modifica della frequenza di backup"] E rimanere nella scheda *User* per selezionare gli utenti per il backup.
+
+
+
+
+== Eseguire una ricerca
+
+È possibile eseguire una ricerca di singoli elementi della mailbox o di quelli condivisi e ripristinarli nella mailbox originale in *Esegui ricerca*.
+
+.Fasi
+. Dalla dashboard, fare clic su *Advanced Search* (Ricerca avanzata) nel menu a sinistra.
+. Fare clic su *Esegui ricerca*.
+. Inserire i dati nei campi obbligatori con un asterisco (*). Campi facoltativi: Condizioni e condizioni di query.image:advanced_search_box.png["L'immagine mostra le opzioni di ricerca con due elementi richiesti"]
++
+** *Select User* (Seleziona utente): Digitare almeno tre lettere nel nome dell'utente per individuare l'utente che si desidera selezionare.
+** *Cerca*: Digitare almeno tre caratteri in una parola chiave. Se si desidera cercare una frase, inserire le parole nella frase all'interno delle virgolette (ad esempio, "Hello World"). Se le parole possono essere ricercate separatamente, le virgolette non sono necessarie.
+** *Corrispondenza esatta*: Selezionare questa opzione se si desidera cercare solo le parole chiave esatte.
+** *Condizioni*:
++
+*** *Elementi*: Selezionare gli elementi per cercare tutti gli elementi nella mailbox.
+*** *Nome cartella*: Selezionare il nome della cartella per cercare gli elementi in una cartella specifica nella mailbox. Digitare il nome della cartella nella casella di testo fornita.
+
+
+** *Intervallo di date*: Dal menu a discesa intervallo di date, selezionare *ultimi 7 giorni* o *intervallo personalizzato* per inserire la data di inizio e di fine della ricerca.
+** *Dimensione in byte*: Dal menu a discesa dimensione in byte, selezionare *maggiore di (>)* o *minore di (<)*. Quindi, immettere la dimensione in byte.
+** *Da*: Inserire l'indirizzo e-mail del mittente.
+** *A*: Inserire l'indirizzo e-mail del destinatario.
+** *Oggetto*: Selezionare questa opzione per effettuare la ricerca solo in base all'oggetto.
+** *Ha allegato*: Selezionare se l'elemento o gli elementi di posta elettronica hanno allegati.
+
+
+. Fare clic su *Cerca*.
+. Per trovare il tuo lavoro di ricerca, vai alla sezione Ricerca di lavori precedenti qui sotto.
+
+
+
+
+== Trova i lavori di ricerca precedenti
+
+È possibile trovare i lavori di ricerca precedenti in *lavori di ricerca precedenti*.
+
+.Fasi
+. Dalla dashboard, fare clic su *Advanced Search* (Ricerca avanzata) nel menu a sinistra.
+. Fare clic su *Previous Search Jobs*.
+. Trova il lavoro di ricerca eseguito in precedenza. Se vengono visualizzati risultati di ricerca pari a zero, significa che nessun elemento soddisfa le condizioni specificate per la ricerca.
+. Fare clic sul numero totale dei risultati della ricerca per visualizzarli.
+. Dalla vista di visualizzazione dei risultati, è possibile ripristinare le voci, selezionare il numero di voci visualizzate utilizzando il menu a discesa *Mostra n. voci* o cercare per restringere ulteriormente i risultati.
++
+image:search_results_display_view.png["L'immagine mostra la visualizzazione dei risultati della ricerca con evidenziazioni per il ripristino, il numero di voci e le funzioni di ricerca"]
+
++
+
+NOTE: Gli elementi ripristinati tornano alla mailbox originale con la convenzione di denominazione CC_Search_MMM.DD_Time. Per trovare il processo di ripristino, selezionare *Jobs* nel menu a sinistra.
+
+. Per uscire dalla visualizzazione dei risultati della ricerca, fare clic su *Torna alla ricerca lavori*.
+

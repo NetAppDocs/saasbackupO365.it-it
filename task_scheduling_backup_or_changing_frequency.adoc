@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: task_scheduling_backup_or_changing_frequency.html 
+keywords: netapp, saas backup, microsoft 365, schedule, scheduling, backup policies, changing backup policies, canceling job, immediate backup, SharePoint Online templates, shared mailboxes, archive mailboxes, archive, archive, shared, mailboxes 
+summary: Seguire la stessa procedura per pianificare un nuovo backup o modificarlo in base alla frequenza di un backup corrente. 
+---
+= Pianificazione di un backup o modifica della frequenza di backup
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile eseguire il backup dei dati non protetti assegnandoli a una policy di backup. Quando i dati non protetti vengono assegnati a un criterio di backup, vengono spostati in uno stato *PENDING* fino al successivo backup pianificato per il criterio assegnato, dopodiché vengono spostati in uno stato *PROTECTED*. Se si desidera modificare la frequenza di backup dei dati protetti, è possibile assegnare i dati a un altro livello di policy di backup.
+
+.Fasi
+. Dalla dashboard, fare clic sul numero sopra *PROTECTED* o *UNPROTECTED* nella casella del servizio che si desidera modificare. Se si desidera modificare la frequenza di backup dei dati protetti, fare clic su *PROTECTED*. Se si desidera eseguire il backup di caselle postali, siti o siti personali appena rilevati, selezionare *NON PROTETTO*.
++
+image:number_protected_unprotected.gif[""]
+
+. Selezionare le opzioni di backup.
++
+.. Per Exchange
++
+*** Se si esegue il backup delle caselle di posta condivise (solo Tier 3), fare clic sulla scheda *SHARED*.
+*** Se si esegue il backup delle cassette postali di archiviazione (solo Tier 3), fare clic sulla scheda *ARCHIVIO*.
+*** Se si esegue il backup o si modificano le caselle postali standard, rimanere nella scheda *UTENTE*.
+
+
+.. Per SharePoint
++
+*** Se si esegue il backup o si modifica il criterio di backup per i siti, rimanere nella scheda *SITI*.
+
+
+.. Per OneDrive
++
+*** Se si esegue il backup o si modifica il criterio di backup per gli utenti, rimanere nella scheda *UTENTE*.
+
+
+.. Per gruppi Microsoft 365
++
+*** Se si esegue il backup dei gruppi (solo Tier 3), rimanere nella scheda *GROUPS*.
+*** Se si esegue il backup dei team (solo Tier 3), fare clic sulla scheda *TEAMS*.
+
+
+
+
+. Selezionare gli elementi di cui si desidera eseguire il backup.
+. Fare clic sul menu *gruppi*.
++
+image:groups_menu.gif["Menu gruppi"]
+
+. Selezionare il nuovo livello di policy per il backup.
++
+
+NOTE: I gruppi e le cassette postali di archiviazione di Microsoft 365 possono essere spostati solo nel criterio di livello 3.
+
+. Fare clic su *Apply* (Applica).
+

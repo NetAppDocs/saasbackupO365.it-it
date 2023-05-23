@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: task_viewing_purged.html 
+keywords: netapp, saas backup, microsoft 365, view, viewing, jobs, purged, deleted, accounts, mailboxes, sites, mysites 
+summary: È possibile visualizzare un elenco di caselle postali o account utente rimossi. 
+---
+= Visualizzare un elenco di dati rimossi
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile visualizzare un elenco di caselle postali o account utente rimossi.
+
+.Fasi
+. Fare clic su image:configure_icon.gif["Schermata dell'icona di configurazione"] Accanto all'id utente SaaS Backup nell'angolo in alto a sinistra.
+. Selezionare *IMPOSTAZIONI ACCOUNT*.
+. FARE CLIC SU *MANTIENI ED ELIMINA*.
+. In *Rimuovi dati*, fare clic su *Mostra elenco elementi rimossi*.
++
+È possibile visualizzare un elenco di elementi pianificati per la rimozione e un elenco di elementi già rimossi.
+
+

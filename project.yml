@@ -1,0 +1,173 @@
+---
+settings:
+  name: SaaS Backup for Microsoft 365
+  rss_page: reference_new_saasbackupO365.html
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: it-it,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
+sidebar:
+  entries:
+  - title: NetApp SaaS Backup per Microsoft 365
+    url: "/index.html"
+  - title: Note di rilascio
+    entries:
+    - title: Novità
+      url: "/reference_new_saasbackupO365.html"
+    - title: Archivio novità
+      url: "/reference_new_archived.html"
+    - title: Problemi e limitazioni noti
+      url: "/reference_kpls.html"
+  - title: Concetti
+    entries:
+    - title: Panoramica
+      url: "/concept_overview.html"
+    - title: Tipi di storage utilizzabili con SaaS Backup
+      url: "/concept_storage_types.html"
+  - title: Inizia subito
+    entries:
+    - title: Workflow
+      url: "/concept_paid_subscription_workflow.html"
+    - title: Creare un account di servizio MS Office con autorizzazioni globali
+      url: "/task_creating_msservice_account_with_global_permissions.html"
+    - title: Configurare l'impersonazione per Microsoft Exchange Online
+      url: "/task_configuring_impersonation.html"
+    - title: Iscriviti a SaaS Backup per Microsoft 365
+      url: "/task_signing_up_for_saasbkup_paid_subscription.html"
+    - title: Pianifica il primo backup
+      url: "/task_scheduling_first_backup.html"
+    - title: Eseguire un backup immediato
+      url: "/task_performing_immediate_backup_of_policy.html"
+    - title: Eliminazione dei dati
+      url: "/reference_paid_subscription_data.html"
+  - title: Gestire i servizi
+    entries:
+    - title: Attivare un servizio
+      url: "/task_activating_a_service.html"
+    - title: Disattivare un servizio
+      url: "/task_deactivating_a_service.html"
+    - title: Attivare il supporto
+      url: "/task_activate_support.html"
+    - title: Scopri nuove caselle postali, siti e gruppi
+      url: "/task_discovering_new.html"
+    - title: Eliminare un utente, una raccolta di siti o un gruppo Microsoft 365
+      url: "/task_purging.html"
+    - title: Abilitare l'autenticazione moderna
+      url: "/task_enable_modern_authentication.html"
+  - title: Gestire le impostazioni
+    entries:
+    - title: Policy di backup
+      url: "/concept_backup_policies.html"
+    - title: Impostazioni di backup
+      url: "/concept_backup_settings.html"
+    - title: Impostare le notifiche
+      url: "/task_setting_account_notifications.html"
+    - title: Permessi
+      entries:
+      - title: Aggiungere autorizzazioni a un account di servizio
+        url: "/task_adding_permissions_to_service_accounts.html"
+      - title: Sincronizzare le autorizzazioni utente con Azure Active Directory
+        url: "/task_syncing_user_permissions_with_azure.html"
+      - title: Concedere le autorizzazioni per abilitare le cassette postali condivise
+        url: "/task_granting_permissions_to_enable_shared_mailboxes.html"
+    - title: Accesso all'account in base al ruolo
+      entries:
+      - title: Assegnare ruoli amministrativi agli account utente
+        url: "/task_assigning_admin_roles_to_user_accounts.html"
+      - title: Aggiornare i ruoli amministrativi assegnati agli account utente
+        url: "/task_updating_admin_roles_assigned_to_user_accounts.html"
+      - title: Eliminare tutti i ruoli amministrativi da un account utente
+        url: "/task_deleting_admin_roles_from_a_user_account.html"
+  - title: Gestire gli utenti
+    entries:
+    - title: Licenze
+      entries:
+      - title: Aggiungere una licenza
+        url: "/task_adding_a_license.html"
+      - title: Aggiorna le informazioni sull'abbonamento
+        url: "/task_updating_subscription_information.html"
+      - title: Rilasciare una licenza utente
+        url: "/task_releasing_a_user_license.html"
+    - title: Regole
+      entries:
+      - title: Creare nuove regole
+        url: "/task_creating_rules.html"
+      - title: Applicare le regole esistenti
+        url: "/task_applying_rules.html"
+      - title: Eliminare le regole
+        url: "/task_deleting_rules.html"
+    - title: Gruppi di sicurezza
+      entries:
+      - title: Aggiungere gruppi di sicurezza
+        url: "/task_adding_security_groups.html"
+      - title: Eliminare i gruppi di sicurezza
+        url: "/task_deleting_security_groups.html"
+  - title: Gestire i backup
+    entries:
+    - title: Pianificazione di un backup o modifica della frequenza di backup
+      url: "/task_scheduling_backup_or_changing_frequency.html"
+    - title: Eseguire un backup immediato
+      url: "/task_performing_immediate_backup_of_service.html"
+    - title: Sfoglia i backup
+      url: "/task_browsing_backups.html"
+    - title: Annullare un lavoro
+      url: "/task_canceling_job.html"
+    - title: Aggiornare il periodo di conservazione del backup
+      url: "/task_updating_backup_retention_period.html"
+    - title: Attiva i backup per OneNote
+      url: "/task_enabling_onenote_backups.html"
+    - title: Modelli e applicazioni supportati per il backup in Microsoft SharePoint
+        Online
+      url: "/concept_supported_templates_and_apps.html"
+  - title: Gestire i ripristini
+    entries:
+    - title: Sui ripristini
+      url: "/reference_about_restores.html"
+    - title: Eseguire un ripristino di alto livello
+      url: "/task_performing_high_level_restore.html"
+    - title: Eseguire un ripristino granulare
+      entries:
+      - title: Per Exchange
+        url: "/task_performing_granular_level_restore_exchange.html"
+      - title: Per SharePoint
+        url: "/task_performing_granular_level_restore_sharepoint.html"
+      - title: Per OneDrive
+        url: "/task_performing_granular_level_restore_onedrive.html"
+      - title: Per gruppi e team
+        url: "/task_performing_granular_level_restore_teams.html"
+    - title: Ripristinare da un backup precedente
+      url: "/task_restoring_from_previous_backup.html"
+    - title: Annullare un lavoro
+      url: "/task_canceling_job.html"
+    - title: Trovare i file ripristinati
+      url: "/task_viewing_restore_file_locations.html"
+  - title: Visualizzare i dati
+    entries:
+    - title: Creare un filtro definito dall'utente
+      url: "/task_creating_user_defined_filter.html"
+    - title: Eseguire una ricerca
+      url: "/task_performing_search.html"
+    - title: USA la ricerca avanzata
+      url: "/task_using_advanced_search.html"
+    - title: Visualizzare la cronologia dei processi e il registro delle attività
+      url: "/task_viewing_history_and_activity.html"
+    - title: Visualizzare gli elementi sottoposti a deprovisioning
+      url: "/task_viewing_deprovisioned.html"
+    - title: Visualizzare i dati rimossi
+      url: "/task_viewing_purged.html"
+    - title: Visualizzare gli elementi cancellati
+      url: "/task_viewing_deleted.html"
+    - title: Scaricare i dati
+      url: "/task_downloading_data.html"
+    - title: Monitorare i dati dell'utente
+      url: "/task_monitoring_data.html"
+  - title: Migrare i dati
+    url: "/task_migrate_data.html"
+  - title: Fornire un feedback
+    url: "/task_providing_feedback.html"
+  - title: Dove trovare assistenza e ulteriori informazioni
+    url: "/concept_get_help_find_info.html"
+  - title: Note legali
+    url: "/reference_legal_notices.html"

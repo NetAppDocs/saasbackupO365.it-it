@@ -1,0 +1,347 @@
+---
+sidebar: sidebar 
+permalink: reference_about_restores.html 
+keywords: netapp, saas backup, microsoft 365, restores, microsoft teams, groups, sharepoint, exchange, onedrive, teams data, teams data locations, locations, teams, email, channels, documents, channel, chat, private channel, individual user chat, group chats, files 
+summary: SaaS Backup per Microsoft 365 offre opzioni di ripristino granulari e di alto livello per ogni servizio. 
+---
+= Sui ripristini
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Con SaaS Backup per Microsoft 365, puoi eseguire ripristini di livello granulare e elevato per gruppi e team Exchange Online, SharePoint Online, OneDrive for Business e Microsoft 365.
+
+Scopri come eseguire ripristini di alto livello e granulari:
+
+* link:task_performing_high_level_restore.html["Eseguire un ripristino di alto livello"]
+* link:task_performing_granular_level_restore_exchange.html["Eseguire un ripristino granulare per Exchange Online"]
+* link:task_performing_granular_level_restore_sharepoint.html["Eseguire un ripristino granulare per SharePoint Online"]
+* link:task_performing_granular_level_restore_onedrive.html["Eseguire un ripristino granulare per OneDrive for Business"]
+* link:task_performing_granular_level_restore_teams.html["Eseguire un ripristino granulare per gruppi e team"]
+
+
+Le seguenti tabelle mostrano le opzioni di ripristino di alto livello supportate per servizio e dove trovare i dati ripristinati in SaaS Backup.
+
+
+NOTE: Quando i dati vengono cancellati o deprovisioning, è possibile ripristinarli in un'altra posizione (mailbox, sito, MySite, gruppo o team) o esportarli. Non è possibile eseguire il ripristino nella stessa posizione.
+
+
+
+== Exchange Online
+
+[cols="15a,15a,15a,15a,40"]
+|===
+| Tipo di elemento | Ripristinare nella stessa mailbox | Ripristinare in un'altra mailbox | Esportare in PST | Dove trovarlo in SaaS Backup 
+
+
+ a| 
+Mailbox singola
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| Exchange Online > Mailbox - utenti/condivisi/Archivio 
+
+
+ a| 
+Caselle postali multiple
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+| Exchange Online > Mailbox - utenti/condivisi/Archivio 
+
+
+ a| 
+Contenuto della mailbox
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| Exchange online > caselle postali - utenti/condivisi/Archivio > <User name> 
+|===
+
+
+== SharePoint Online
+
+[cols="15a,15a,15a,15a,40"]
+|===
+| Tipo di elemento | Ripristinare sullo stesso sito | Ripristinare su un altro sito | Esportare i dati | Dove trovarlo in SaaS Backup 
+
+
+ a| 
+Singolo sito SharePoint
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| SharePoint Online > Siti 
+
+
+ a| 
+Più siti SharePoint
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+| SharePoint Online > Siti 
+
+
+ a| 
+Contenuto del sito SharePoint
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| SharePoint Online > Siti > <Site name> 
+
+
+ a| 
+Singolo sito SharePoint con ruoli di ripristino attivati
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+| SharePoint Online > Siti 
+
+
+ a| 
+Singolo sito secondario
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| SharePoint Online > Siti > <Site name> 
+
+
+ a| 
+Più siti secondari
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| SharePoint Online > Siti > <Site name> 
+
+
+ a| 
+Contenuto del sito secondario SharePoint
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| SharePoint Online > Siti > <Site name> 
+
+
+ a| 
+Sito singolo/multiplo con ruoli di ripristino attivati
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+| SharePoint Online > Siti > <Site name> 
+|===
+
+
+== OneDrive per le aziende
+
+[cols="15a,15a,15a,15a,40"]
+|===
+| Tipo di elemento | Ripristinare sullo stesso MySite | Ripristinare su un altro MySite | Esportare i dati | Dove trovarlo in SaaS Backup 
+
+
+ a| 
+Disco singolo
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| OneDrive for Business > My Sites 
+
+
+ a| 
+Dischi multipli
+ a| 
+No
+ a| 
+No
+ a| 
+No
+| OneDrive for Business > My Sites 
+
+
+ a| 
+Contenuto di un singolo disco
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| OneDrive per il business > My Sites> <OneDrive user> 
+|===
+
+
+== Gruppi
+
+[cols="15a,15a,15a,15a,40"]
+|===
+| Tipo di elemento | Ripristinare nello stesso gruppo | Ripristinare in un altro gruppo | Esportare i dati | Dove trovarlo in SaaS Backup 
+
+
+ a| 
+Gruppo singolo
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| Gruppi di Office 365 > gruppi 
+
+
+ a| 
+Più gruppi
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+| Gruppi di Office 365 > gruppi 
+
+
+ a| 
+Contenuto del gruppo
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| Gruppi di Office 365 > gruppi > <Group Name> 
+
+
+ a| 
+Contenuto della mailbox
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+| Gruppi di Office 365 > gruppi > (email di gruppo) > Nome gruppo 
+
+
+ a| 
+Contenuti SharePoint
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+| Gruppi di Office 365 > gruppi > <Group name> <Site name> 
+|===
+
+
+== Team
+
+[cols="15a,15a,15a,15a,40"]
+|===
+| Tipo di elemento | Ripristinare nello stesso team | Ripristinare in un altro team | Esportare i dati | Dove trovarlo in SaaS Backup 
+
+
+ a| 
+Singolo team
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| Gruppi di Office 365 > Team 
+
+
+ a| 
+Più team
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+| Gruppi di Office 365 > Team 
+
+
+ a| 
+Contenuti del team
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| Gruppi di Office 365 > Team > <Team name> 
+
+
+ a| 
+Contenuto della mailbox
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+| Gruppi di Office 365 > Team > (email del team) > Nome del team 
+
+
+ a| 
+Contenuti SharePoint
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+| Gruppi di Office 365 > Team > <Team name> <Site name> 
+
+
+ a| 
+Canali
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+| Gruppi di Office 365 > Team > (e-mail del team) 
+|===

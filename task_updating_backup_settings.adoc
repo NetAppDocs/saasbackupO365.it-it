@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: task_updating_backup_settings.html 
+keywords: netapp, saas backup, microsoft 365, backup, setting, update, updating, autosync, enable, restore, recoverable, items, backup, list, views, version, history, workflows 
+summary: È possibile aggiornare le impostazioni di backup per controllare diverse opzioni di backup. Le impostazioni di backup disponibili variano in base al servizio. 
+---
+= Aggiornare le impostazioni di backup
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile aggiornare il <<concept_backup_settings.adoc#backup-settings,impostazioni di backup>> per controllare diverse opzioni di backup. Disponibile <<concept_backup_settings.adoc#backup-settings,impostazioni di backup>> varia in base al servizio.
+
+.Fasi
+. Fare clic su *Services* (servizi) nel riquadro di navigazione a sinistra.
++
+image:services.gif["Schermata del pulsante servizi"]
+
+. Fare clic su Microsoft 365.
++
+image:mso365_settings.gif["Schermata del pulsante Microsoft 365"]
+
+. In *Manage Services* (Gestisci servizi), fare clic sull'icona delle impostazioni di backup image:configure_icon.gif["Schermata dell'icona di configurazione"] accanto al servizio da aggiornare. Viene visualizzato un elenco delle impostazioni di backup disponibili per il servizio selezionato.
+. Selezionare le impostazioni di backup desiderate.
+. Fare clic su *Conferma*.
+

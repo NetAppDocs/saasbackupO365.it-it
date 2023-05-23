@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: task_deleting_rules.html 
+keywords: netapp, saas backup, microsoft 365, delete, deleting, removing, rules 
+summary: Se non è più necessaria una regola esistente, è possibile eliminarla. Inoltre, se è necessario eliminare un gruppo di protezione utilizzato in una regola, è necessario eliminare la regola utilizzando il gruppo di protezione prima di poter rimuovere il gruppo di protezione. 
+---
+= Eliminare le regole
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se non è più necessaria una regola esistente, è possibile eliminarla. Inoltre, se è necessario eliminare un gruppo di protezione utilizzato in una regola, è necessario eliminare la regola utilizzando il gruppo di protezione prima di poter rimuovere il gruppo di protezione.
+
+.Fasi
+. Dalla dashboard, fare clic sul numero riportato sopra *NON PROTETTO* nella casella del servizio per il quale si desidera creare le regole.
++
+image:number_protected_unprotected.gif[""]
+
+. Fare clic su *Filter* (filtro).
++
+image:filter.gif["Schermata del pulsante del menu a discesa del filtro"]
+
+. Fare clic su *regole*. Vengono visualizzate le regole esistenti.
+. Fare clic su image:trash_can_icon.gif["Schermata dell'icona di eliminazione"] per eliminare la regola. Lo stato degli elementi a cui la regola era applicata in precedenza non viene modificato quando la regola viene eliminata.
+

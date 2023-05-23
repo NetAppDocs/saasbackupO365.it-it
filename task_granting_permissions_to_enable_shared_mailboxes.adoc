@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: task_granting_permissions_to_enable_shared_mailboxes.html 
+keywords: netapp, saas backup, microsoft 365, grant, granting, permissions, enabling, shared, mailboxes, azure, grant, shared 
+summary: Con NetApp SaaS Backup per Microsoft 365 puoi concedere le autorizzazioni per abilitare le caselle di posta condivise. 
+---
+= Concedere le autorizzazioni per abilitare le cassette postali condivise
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile concedere le autorizzazioni per abilitare le caselle di posta condivise all'interno di NetApp SaaS Backup per Microsoft 365.
+
+.Fasi
+. Fare clic su image:services.gif["Schermata del pulsante servizi"] dal riquadro di navigazione di sinistra.
+. Fare clic sul collegamento Microsoft 365.
++
+image:mso365_settings.gif["Schermata del pulsante Microsoft 365"]
+
+. Fare clic su *Grant acconsentire*.
++
+image:grant_consent.gif["Schermata dell'icona Grant consensi"]
+
++
+Si viene reindirizzati alla pagina di autorizzazione di Azure per l'autenticazione.
+
+. Selezionare l'account tenant.
+. *Accettare* le autorizzazioni. Le caselle di posta condivise verranno rilevate durante la successiva *sincronizzazione automatica* pianificata oppure è possibile eseguire una *sincronizzazione ora*. Se si esegue la sincronizzazione ora*, il rilevamento delle caselle di posta condivise richiede alcuni minuti.
+. Per accedere alle caselle di posta condivise dopo una *sincronizzazione automatica* o una *sincronizzazione ora*, procedere come segue:
++
+.. Fare clic su image:services.gif["Schermata del pulsante servizi"] dal riquadro di navigazione di sinistra.
+.. Fare clic su *Microsoft Exchange Online*.
+.. Fare clic sul numero di mailbox non protette.
+.. Fare clic sulla scheda *Shared*.
+
+
+

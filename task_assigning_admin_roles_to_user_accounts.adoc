@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: task_assigning_admin_roles_to_user_accounts.html 
+keywords: netapp, saas backup, microsoft 365, assign, assigning, role-based accounts, administrative roles, privileges, granting, user, users, user accounts 
+summary: È possibile assegnare ruoli amministrativi agli account utente per concedere privilegi amministrativi agli utenti selezionati per uno o più servizi. 
+---
+= Assegnare ruoli amministrativi agli account utente
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile assegnare ruoli amministrativi agli account utente per concedere privilegi amministrativi agli utenti selezionati per uno o più servizi.
+
+È possibile assegnare agli utenti i seguenti ruoli:
+
+* Tenant globale: Concede privilegi amministrativi a tutti i servizi, a tutti gli obiettivi di storage e agli aggiornamenti delle licenze (rinnovo/upgrade).
+* Amministratore di Exchange: Concede privilegi amministrativi solo a Microsoft Exchange Online. Gli altri servizi non possono essere visualizzati o modificati.
+* OneDrive Administrator: Concede privilegi amministrativi solo a Microsoft OneDrive for Business. Gli altri servizi non possono essere visualizzati o modificati.
+* SharePoint Administrator: Concede privilegi amministrativi solo a Microsoft SharePoint Online. Gli altri servizi non possono essere visualizzati o modificati.
+
+
+.Fasi
+. Fare clic sull'icona delle impostazioni image:configure_icon.gif["Schermata dell'icona di configurazione"] Accanto all'ID utente nella parte superiore sinistra della schermata.
+. Fare clic su *IMPOSTAZIONI ACCOUNT*.
+. Fare clic su *ROLE MANAGEMENT*.
+. Fare clic su image:bluecircle_icon.gif["Schermata dell'icona selezionata per visualizzare le opzioni relative al ruolo dell'utente"] icona.
+. Inserire l'indirizzo e-mail dell'utente che si desidera aggiungere.
+. Fare clic sul menu a discesa per selezionare il ruolo. È possibile assegnare uno o più ruoli a un utente.
+. Fare clic su *Conferma*.
+

@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: task_downloading_data.html 
+keywords: netapp, saas backup, microsoft 365, jobs, history, activity, log, download, downloading 
+summary: È possibile visualizzare o scaricare un registro delle attività e della cronologia delle mansioni di SaaS Backup. 
+---
+= Scaricare i log
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SaaS Backup per Microsoft 365 memorizza un registro della cronologia del tuo lavoro all'interno di SaaS Backup. È possibile scaricare la cronologia dei lavori e un elenco dei lavori completati.
+
+
+
+== Scaricare il registro delle attività
+
+Viene memorizzato un registro di tutte le attività che si verificano all'interno di SaaS Backup per Microsoft 365. Il registro contiene la data di ciascuna azione eseguita insieme al nome dell'utente che ha eseguito l'azione. È possibile scaricare il registro delle attività in un file .csv.
+
+.Fasi
+. Fare clic su image:reporting.gif["Schermata del pulsante di reporting"] nel riquadro di navigazione di sinistra.
+. Fare clic sulla scheda *Registro attività*. Viene visualizzato un elenco di tutte le attività di backup SaaS per Microsoft 365.
+. Fare clic su image:download_activitylog.gif["Schermata del pulsante di download nell'angolo destro del registro delle attività"]. Il registro delle attività viene scaricato come file .csv.
+
+
+
+
+== Scaricare un registro dei lavori completati
+
+È possibile scaricare un foglio di calcolo Excel per i lavori completati correttamente.
+
+.Fasi
+. Fare clic su *Jobs* nel riquadro di spostamento di sinistra.
+. Fare clic sul lavoro completato di recente che si desidera scaricare.
+. Fare clic su *Successful* (riuscito) sotto il numero di lavori completati correttamente.
++
+image:completed_jobs.gif["Schermata dei job completati"]
+
+. Fare clic su *Download* in alto a destra. Il log viene scaricato.
+

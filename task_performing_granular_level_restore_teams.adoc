@@ -1,0 +1,398 @@
+---
+sidebar: sidebar 
+permalink: task_performing_granular_level_restore_teams.html 
+keywords: netapp, saas backup, perform, performing, restore, microsoft 365, granular restores, Microsoft TeamsChat, conversations, channels 
+summary: È possibile utilizzare SaaS Backup for Microsoft 365 Groups/Teams per eseguire ripristini di livello granulari. 
+---
+= Eseguire un ripristino granulare per gruppi e team Microsoft 365
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+All'interno di Microsoft 365 Groups e Teams, è possibile ripristinare elementi granulari come caselle postali, SharePoint, conversazioni, canali e schede.
+
+Per impostazione predefinita, solo il backup più recente è disponibile per il ripristino. Altre opzioni disponibili includono:
+
+image:backup_for_restore_availability.png["Backup disponibili per il ripristino"]
+
+La tabella indica le opzioni di ripristino supportate per gli elementi granulari e dove trovarli in SaaS Backup.
+
+Per *gruppi*
+
+[cols="20a,20a,20a,20a,40a"]
+|===
+| Tipo di elemento | Ripristinare nello stesso gruppo | Ripristinare in un altro gruppo | Esportare i dati | Dove trovarlo in SaaS Backup 
+
+
+ a| 
+Cartelle singole/multiple
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+ a| 
+Gruppi di Office 365 > gruppi > (nome gruppo) > casella postale
+
+
+
+ a| 
+Posta in arrivo
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+ a| 
+Gruppi di Office 365 > gruppi > (nome gruppo) > casella postale
+
+
+
+ a| 
+Elementi singoli/multipli (e-mail o evento)
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+ a| 
+Gruppi di Office 365 > gruppi > (nome gruppo) > casella postale > posta
+
+|===
+Per *team*
+
+[cols="20a,15a,15a,15a,40a"]
+|===
+| Tipo di elemento | Ripristinare nello stesso team | Ripristinare in un altro team | Esportare i dati | Dove trovarlo in SaaS Backup 
+
+
+ a| 
+Cartelle singole/multiple
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+ a| 
+Gruppi di Office 365 > Team > (nome del team) > casella postale
+
+
+
+ a| 
+Posta in arrivo
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+ a| 
+Gruppi di Office 365 > Team > (nome del team) > Mailbox > Mail
+
+
+
+ a| 
+Elementi singoli/multipli (e-mail o evento)
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+ a| 
+Gruppi di Office 365 > Team > (nome del team) > Mailbox > Mail
+
+
+
+ a| 
+Conversazioni/chat
+ a| 
+No
+ a| 
+No
+ a| 
+Sì (solo esportazione in HTML)
+ a| 
+* Gruppi di Office 365 > Team > (Nome del team) > casella postale > conversazioni > Chat del team
+* Gruppi di Office 365 > Team > (Nome del team) > casella postale > posta > Cronologia conversazioni > Chat del team (posizione effettiva)
+
+
+
+
+ a| 
+Conversazione con elementi singoli o multipli
+ a| 
+No
+ a| 
+No
+ a| 
+Sì (solo esportazione in HTML)
+ a| 
+Gruppi di Office 365 > Team > (Nome del team) > casella postale > Cronologia conversazioni > Chat del team
+
+
+
+ a| 
+Canali singoli/multipli
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+ a| 
+Gruppi di Office 365 > Team > (nome del team) > canali
+
+*Nota*: Il ripristino include solo il nome del canale e i nomi delle schede.
+
+
+
+ a| 
+Schede sotto canali
+ a| 
+No
+ a| 
+No
+ a| 
+No
+ a| 
+Gruppi di Office 365 > Team > (nome del team) > canali
+
+
+
+ a| 
+Documenti standard di canale
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+ a| 
+Gruppi di Office 365 > Team > (nome del team > Sito SharePoint > documenti > (nome del canale)
+
+
+
+ a| 
+Canale di documenti privati
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+ a| 
+SharePoint > (nome sito canale privato) > documenti > (nome canale privato)
+
+*Nota*: È disponibile una raccolta di siti separata con il nome "<Your Team Name – Private Channel Name>". È possibile filtrare queste raccolte siti con l'ID modello: TEAMCHANNEL 0.
+
+
+
+ a| 
+Contenuto di OneNote
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+ a| 
+Gruppi di Office 365 > Team > (Nome team) > Sito SharePoint > documenti > (Nome canale)
+
+
+
+ a| 
+Contenuti wiki
+ a| 
+Sì
+ a| 
+No
+ a| 
+Sì
+ a| 
+Gruppi di Office 365 > Team > (nome del team) > Sito SharePoint > dati Wiki team > (nome del canale)
+
+
+
+ a| 
+File
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+ a| 
+Gruppi di Office 365 > Team > (Nome team) > Sito SharePoint > documenti > (Nome canale)
+
+
+
+ a| 
+Chat utente individuale e chat di gruppo
+
+*Nota*: Chat incluse nei backup online di Exchange.
+ a| 
+No
+ a| 
+No
+ a| 
+Sì
+ a| 
+* Exchange > "utente" > Mail > conversazioni > Team Chat
+* Exchange > "utente" > Mail > Cronologia conversazioni > Team Chat
+
+
+
+
+ a| 
+File nelle chat individuali e di gruppo
+
+*Nota*: File inclusi nei backup di OneDrive for Business.
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+ a| 
+OneDrive > "utente" > file > file di chat Microsoft Teams
+
+|===
+
+
+== Ripristinare le caselle postali
+
+Seleziona questo ripristino granulare per ripristinare inbox, calendari e cronologia delle conversazioni.
+
+.Fasi
+. Dalla dashboard, fare clic sul numero riportato sopra *PROTECTED* in *Microsoft 365 Groups*.
+. Selezionare la scheda *gruppi* o *team*.
+. Fare clic sul gruppo o sul team di cui si desidera eseguire il ripristino granulare.
+. Selezionare la categoria della mailbox.
++
+image:granular_level_restore_mailbox_option.gif["immagine dell'opzione della mailbox evidenziata"]
+
++
+
+NOTE: Per i gruppi, *canali* non è disponibile.
+
++
+** Selezionare l'opzione *Mail* per ripristinare la cronologia della conversazione o della posta in arrivo nella stessa casella postale o esportare i dati.image:granular_level_restore_mailbox_mail_option.gif["immagine dell'opzione di posta evidenziata"]
++
+
+NOTE: Per i gruppi, *conversazioni* non è disponibile.
+
++
+... Per ripristinare una inbox, selezionare *Inbox* e fare clic su *Restore*.
++
+.... Selezionare *Ripristina nella stessa mailbox* o *Esporta dati*.
++
+Se si esportano dati, è necessario scaricarli. Accedere a *Reporting* nel menu a sinistra. Trova il tuo lavoro di esportazione dei dati. Fare clic su *Total Folders* (cartelle totali). Quindi fare clic su *Export Data Download link*. Un file zip viene scaricato. Aprire il file zip per estrarre i dati.
+
++
+
+NOTE: Se si seleziona l'opzione di ripristino *Esporta dati*, il collegamento fornito è valido per sette giorni e viene pre-autenticato.
+
+.... Fare clic su *Conferma*.
+
+
+
+
+** Selezionare l'opzione *Calendario* per ripristinare il calendario nella stessa casella postale o esportare i dati.image:granular_level_restore_mailbox_calendar_option.gif["immagine dell'opzione di calendario evidenziata"]
++
+... Selezionare *Calendario* e fare clic su *Ripristina*.
+... Selezionare *Ripristina nella stessa mailbox* o *Esporta dati*.
++
+Se si esportano dati, è necessario scaricarli. Accedere a Reporting (rapporti) nel menu di sinistra. Trova il tuo lavoro di esportazione dei dati. Fare clic su *Total Folders* (cartelle totali). Quindi fare clic su *Export Data Download link*. Un file zip viene scaricato. Aprire il file zip per estrarre i dati.
+
++
+
+NOTE: Se si seleziona l'opzione di ripristino *Esporta dati*, il collegamento fornito è valido per sette giorni e viene pre-autenticato.
+
+... Fare clic su *Conferma*.
+
+
+** Selezionare l'opzione *conversazioni* per ripristinare le conversazioni. L'unica opzione per il ripristino è l'esportazione in HTML.image:granular_level_restore_mailbox_conversations_option.gif["immagine dell'opzione conversazioni evidenziate"]
++
+... Selezionare le conversazioni che si desidera ripristinare e fare clic su *Restore* (Ripristina).
++
+
+NOTE: *Visualizza conversazioni* mostra un elenco di tutte le conversazioni degli ultimi "x" giorni di backup fino agli ultimi 30 backup. Ad esempio, se si esegue il backup sette volte negli ultimi cinque giorni, è possibile visualizzare solo le conversazioni degli ultimi sette backup.
+
+... Fare clic su *Conferma*.
+
+
+
+
+
+
+
+
+== Ripristinare i siti SharePoint
+
+Selezionare questo ripristino granulare per ripristinare le schede e gli allegati.
+
+.Fasi
+. Dalla dashboard, fare clic sul numero riportato sopra *PROTECTED* in *Microsoft 365 Groups*.
+. Selezionare la scheda *gruppi* o *team*.
+. Fare clic sul gruppo o sul team di cui si desidera eseguire il ripristino granulare.
+. Selezionare l'opzione del sito SharePoint.image:granular_level_restore_sharepoint_site_option.gif["immagine dell'opzione siti evidenziati"]
+. Fare clic sul sito per il quale si desidera eseguire il ripristino granulare.
+. Selezionare la categoria da ripristinare.
++
+
+NOTE: Se si desidera ripristinare singoli elementi specifici all'interno di una categoria, fare clic sulla categoria di contenuto e selezionare i singoli elementi.
+
+. Fare clic su *Restore* (Ripristina).
+. Selezionare un'opzione di ripristino:
++
+** *Ripristinare sullo stesso sito*
++
+Se si esegue il ripristino nello stesso sito, per impostazione predefinita viene creata una cartella di ripristino con la data e l'ora correnti nella posizione del file originale contenente la copia di backup. Se si seleziona l'opzione *Sovrascrivi con Unione*, non viene creata alcuna cartella di ripristino. Se la versione del file di backup e il file corrente corrispondono, il backup viene ripristinato nella posizione originale. Qualsiasi nuovo contenuto nella destinazione viene ignorato e non viene influenzato. Ad esempio, se il backup contiene File1 versione 5 e la destinazione contiene File1 versione 6, un ripristino con l'opzione *Sovrascrivi con Unione* selezionata non riesce. Se si seleziona l'opzione *Sostituisci il contenuto esistente*, la versione corrente dei dati viene sostituita completamente con la copia di backup.
+
+** *Esporta dati*
++
+Se si esportano dati, è necessario scaricarli. Accedere a Reporting (rapporti) nel menu di sinistra. Trova il tuo lavoro di esportazione dei dati. Fare clic su *Total Folders* (cartelle totali). Quindi fare clic su *Export Data Download link*. Un file zip viene scaricato. Aprire il file zip per estrarre i dati.
+
++
+
+NOTE: Se si seleziona l'opzione di ripristino *Esporta dati*, il collegamento fornito è valido per sette giorni e viene pre-autenticato.
+
+
+
+. Fare clic su *Conferma*.
+
+
+
+
+== Ripristinare i canali
+
+Selezionare questo ripristino granulare per ripristinare i canali.
+
+.Fasi
+. Dalla dashboard, fare clic sul numero riportato sopra *PROTECTED* in *Microsoft 365 Groups*.
+. Selezionare la scheda *Team*.
+. Fare clic sul team di cui si desidera eseguire il ripristino granulare.
+. Selezionare *canali*.image:granular_level_restore_channel_option.gif["immagine dell'opzione dei canali evidenziati"]
+. Selezionare il canale da ripristinare.
+. Fare clic su *Restore* (Ripristina).
+. Selezionare l'opzione di ripristino:
++
+.. Fare clic su *Restore to the same team* (Ripristina nello stesso team).
+.. Fare clic su *Ripristina in un altro raggruppamento*.
++
+Per selezionare un altro team, cercare l'altro team nella casella di ricerca.
+
+
+
+. Fare clic su *Conferma*.
+

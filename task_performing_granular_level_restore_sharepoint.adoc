@@ -1,0 +1,191 @@
+---
+sidebar: sidebar 
+permalink: task_performing_granular_level_restore_sharepoint.html 
+keywords: netapp, saas backup, perform, performing, restore, microsoft 365, granular restores, Microsoft SharePoint Online, sites 
+summary: È possibile utilizzare SaaS Backup per Microsoft 365 per eseguire ripristini granulari di livello per Microsoft SharePoint Online. 
+---
+= Eseguire un ripristino granulare per Microsoft SharePoint Online
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+In Microsoft SharePoint Online, è possibile ripristinare elementi granulari per un singolo utente, ad esempio cartelle o file singoli. Puoi anche ripristinare elementi granulari per un sito di gruppo Microsoft 365 e notebook OneNote. I ruoli e le autorizzazioni del sito vengono protetti automaticamente come parte di un ripristino o di un backup.
+
+Per impostazione predefinita, solo il backup più recente è disponibile per il ripristino. Altre opzioni disponibili includono:
+
+image:backup_for_restore_availability.png["Backup disponibili per il ripristino"]
+
+La tabella indica le opzioni di ripristino supportate per gli elementi granulari.
+
+
+NOTE: Per le opzioni di ripristino *Ripristina nello stesso sito* e *Ripristina in un altro sito*, i seguenti elementi vengono ripristinati come siti secondari nel sito selezionato con la convenzione di denominazione <sitename_cc_timestamp>: *Sito singolo*, *Siti multipli* e *elenchi singoli/multipli* se sono selezionati 3 o più elenchi.
+
+[cols="20,20a,20a,20a,40"]
+|===
+| Tipo di elemento | Ripristinare sullo stesso sito | Ripristinare su un altro sito | Esportare i dati | Dove trovarlo in SaaS Backup 
+
+
+| Elementi singoli/multipli  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+| SharePoint Online > Siti > <Site Name> > <List Name> 
+
+
+| Sito singolo  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| SharePoint Online > Siti 
+
+
+| Più siti  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+| SharePoint Online > Siti 
+
+
+| Siti di comunicazione  a| 
+No
+ a| 
+No
+ a| 
+No
+| SharePoint Online > Siti 
+
+
+| Siti secondari singoli/multipli  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| SharePoint Online > Siti > <Site name> > Siti secondari 
+
+
+| Cartelle singole/multiple  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| SharePoint Online > Siti > <Site name> > <List name> 
+
+
+| Elenchi singoli/multipli  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| SharePoint Online > Siti > <Site name> 
+
+
+| OneNote: Notebook singoli o multipli  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| SharePoint Online > Siti > <Site name> > <List name> 
+
+
+| Gruppi di sezioni singoli/multipli di OneNote  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| SharePoint Online > Siti > <Site name> > <List name> > <Notebook folder> 
+
+
+| OneNote singole/multiple sezioni  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+| SharePoint Online > Siti > <Site name> > <List name> > <Notebook folder> 
+|===
+.Fasi
+. Dalla dashboard, fare clic sul numero riportato sopra *PROTECTED* nella casella SharePoint.
+. Fare clic sul sito per il quale si desidera eseguire il ripristino granulare.
+. Selezionare la categoria da ripristinare.
++
+
+NOTE: Se si desidera ripristinare singoli elementi specifici all'interno di una categoria, fare clic sulla categoria di contenuto e selezionare i singoli elementi.
+
+. Per eseguire il ripristino dal backup più recente, fare clic su *Restore* (Ripristina). Per ripristinare una versione precedente dell'elemento, fare clic su *Mostra versioni*, selezionare la versione che si desidera ripristinare, quindi fare clic su *Ripristina*.
+. Selezionare un'opzione di ripristino:
++
+** *Ripristina nello stesso sito* se si esegue il ripristino nello stesso sito, per impostazione predefinita, viene creata una cartella di ripristino con la data e l'ora correnti nella posizione del file originale contenente la copia di backup.
++
+Se si seleziona *Restore only roles*, *Overwrite with merge* o *Replace the existing content*, l'unica opzione di ripristino è *Restore to the same site*.
+
++
+[cols="24a,24a"]
+|===
+| Se si seleziona | Ripristinare sullo stesso sito 
+
+
+ a| 
+Ripristinare solo i ruoli
+ a| 
+tutti i tipi di elementi
+
+
+
+ a| 
+Sovrascrivere con merge
+ a| 
+tutti gli elementi tranne il livello del sito
+
+
+
+ a| 
+Sostituire con contenuti esistenti
+ a| 
+solo a livello di elemento
+
+|===
++
+Se si seleziona *Restore Only Roles* (ruoli solo ripristino), vengono ripristinati solo i ruoli e le autorizzazioni.image:sharepoint_granular_restore_only_roles.png["L'immagine mostra una finestra di ripristino granulare con l'opzione Restore Only roles (ruoli solo ripristino) selezionata"]
+
++
+Se si seleziona l'opzione *Sovrascrivi con Unione*, non viene creata alcuna cartella di ripristino. Se la versione del file di backup e il file corrente corrispondono, il backup viene ripristinato nella posizione originale. Qualsiasi nuovo contenuto nella destinazione viene ignorato e non viene influenzato. Ad esempio, se il backup contiene File1 versione 5 e la destinazione contiene File1 versione 6, un ripristino con l'opzione *Sovrascrivi con Unione* selezionata non riesce.
+
++
+Se si seleziona l'opzione *Sostituisci il contenuto esistente*, la versione corrente dei dati viene sostituita completamente con la copia di backup.
+
+** *Ripristinare su un altro sito*
++
+Se si esegue il ripristino in un altro sito, è necessario inserire il sito di destinazione nel campo di ricerca. È possibile digitare una parte del sito nel campo di ricerca per avviare una ricerca automatica dei siti corrispondenti.
+
+** *Esporta dati*
++
+Se si esportano dati, è necessario scaricarli. Accedere a *Reporting* nel menu a sinistra. Trova il tuo lavoro di esportazione dei dati. Fare clic su *Total Folders* (cartelle totali). Quindi fare clic su *Export Data Download link*. Un file zip viene scaricato. Aprire il file zip per estrarre i dati.
+
++
+
+NOTE: Se si seleziona l'opzione di ripristino *Esporta dati*, il collegamento fornito è valido per sette giorni e viene pre-autenticato.
+
+
+
+. Fare clic su *Conferma*.
++
+Viene visualizzato un messaggio che indica che il processo di ripristino è stato creato.
+
+. Fare clic su *View the job progress* (Visualizza avanzamento del processo) per monitorare l'avanzamento del ripristino.
+

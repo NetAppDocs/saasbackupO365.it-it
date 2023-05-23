@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: concept_supported_templates_and_apps.html 
+keywords: netapp, saas backup, microsoft 365, backup, supported, templates, apps 
+summary: Per Microsoft SharePoint Online sono supportati solo alcuni modelli e applicazioni. 
+---
+= Modelli e applicazioni supportati per il backup in Microsoft SharePoint Online
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+Per i backup di Microsoft SharePoint Online sono supportati solo alcuni modelli e alcune applicazioni.
+
+
+
+== Modelli supportati
+
+Per i backup di Microsoft SharePoint Online sono supportati solo i seguenti modelli.
+
+* N. STS 0 (sito del team)
+* BLOG 0 (sito blog)
+* DEV 0 (sito per sviluppatori)
+* PROJECTSITE n. 0 (sito del progetto)
+* COMMUNITY 0 (sito della community)
+* BDR n. 0 (Document Center)
+* Community Portal
+* ENTERWIKI n. 0 (WIKI Enterprise)
+* EHS n. 1 (sito principale)
+* EHS n. 0 (sito principale)
+* Numero di serie 0 (sito di comunicazione)
+* GRUPPO n. 0 (prefisso raccolta siti gruppo)
+* N. STS 1 (sito vuoto)
+* STS 2 (Area di lavoro documenti)
+* STS n. 3 (sito moderno del team)
+* APP n. 0 (modello applicazione)
+
+
+
+
+== Applicazioni supportate
+
+Le seguenti applicazioni sono supportate per i backup di Microsoft SharePoint Online.
+
+* Elenco personalizzato
+* Badge (sito della community)
+* Raccolta di documenti
+* Libreria di stili
+* Sondaggio
+* Collegamento
+* Annuncio
+* Contatto
+* Calendario
+* Consiglio di discussione
+* Foto
+* Archivio di immagini
+* Web part di contenuti
+* Galleria modelli di elenco
+* Galleria delle pagine master
+* Pagine del sito
+* Elenco personalizzato nella vista dataset
+* Galleria delle soluzioni
+* Galleria di temi
+* Look composto
+* Link promossi
+* Attività
+* Post (sito blog)
+* Commenti (sito blog)
+* Discussioni nella community (sito della community)
+* Categorie (sito blog)
+* Categorie di community (sito della community)
+* Report
+* Pagine wiki
+* Immagini raccolta siti
+* Membri della community (sito della community)
+* Monitoraggio dei problemi
+* Libreria di record
+* Condivisione dei collegamenti
+

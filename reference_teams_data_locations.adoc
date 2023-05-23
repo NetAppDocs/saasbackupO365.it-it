@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: reference_teams_data_locations.html 
+keywords: netapp, saas backup, microsoft 365, microsoft teams, groups, sharepoint, exchange, onedrive, teams data, teams data locations, locations, teams, email, channels, documents, channel, chat, private channel, individual user chat, group chats, files 
+summary: Una tabella di riferimento mostra dove individuare i dati dei team in SaaS Backup. 
+---
+= Ubicazioni dei dati dei team
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+I dati per i team Microsoft hanno diverse posizioni in SaaS Backup per Microsoft 365.
+
+La tabella mostra dove individuare i dati dei team in SaaS Backup.
+
+[cols="12,64a"]
+|===
+| Dati dei team | Dove si trova in SaaS Backup? 
+
+
+| E-mail dei team  a| 
+Microsoft 365 Groups > Teams > SampleTeam > Mailbox
+
+
+
+| Canali del team  a| 
+Microsoft 365 Groups > Teams > SampleTeam > Channels
+
+
+
+| Documenti di canale standard del team  a| 
+Microsoft 365 Groups > Teams > SampleTeam > SharePoint Site > Documents > SampleTeam-StdChannel
+
+
+
+| Chat di canale standard di Teams  a| 
+* Microsoft 365 Groups > Teams > SampleTeam > Mailbox > Conversions > Team Chat
+* Microsoft 365 Groups > Teams > SampleTeam > Mailbox > Mail > Conversation History > Team Chat (posizione effettiva)
+
+
+
+
+| Documenti del canale privato dei team  a| 
+SharePoint > SampleTeam – SampleTeam-PrivChannel > documenti > SampleTeam-PrivChannel
+
+
+NOTE: È disponibile una raccolta di siti separata con il nome "<Your Team Name – Private Channel Name>". È possibile filtrare queste raccolte siti con l'ID modello: TEAMCHANNEL 0.
+
+
+
+| Chat di canale privata team  a| 
+* Exchange > "utente nel canale privato" > Mail > conversazioni > Team Chat
+* Exchange > "User in Private Channel" (utente nel canale privato) > Mail > Conversation History (Cronologia conversazioni) > Team Chat (posizione effettiva)
+
+
+
+
+| Chat utente individuale e chat di gruppo  a| 
+* Exchange > "utente" > Mail > conversazioni > Team Chat
+* Exchange > "utente" > Mail > Cronologia conversazioni > Chat del team (posizione effettiva)
+
+
+
+
+| File condivisi in chat utente singola e chat di gruppo  a| 
+OneDrive > "utente" > file > file di chat Microsoft Teams
+
+|===

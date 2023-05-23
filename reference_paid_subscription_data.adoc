@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: reference_paid_subscription_data.html 
+keywords: paid, subscription, data, saas, backup, microsoft 365 
+summary: 'Se non rinnovi la tua versione con licenza di SaaS Backup per Microsoft 365, i dati utilizzati durante l"abbonamento verranno cancellati.' 
+---
+= Eliminazione dei dati
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se non rinnovi la versione con licenza di SaaS Backup per Microsoft 365, i dati utilizzati durante l'abbonamento vengono cancellati come segue:
+
+|===
+| Se il tuo abbonamento SaaS Backup a pagamento è... | Numero di giorni dopo la fine dell'abbonamento a pagamento | I tuoi dati sono... 
+
+
+| Scaduto | 1-30 giorni | Disponibile: L'amministratore dispone di un accesso normale ed è in grado di eseguire backup e ripristini manuali. SaaS Backup continua a visualizzare avvisi e a inviare notifiche. 
+
+
+| Disattivato | 31-60 giorni | Disattivato: L'amministratore non ha accesso al portale SaaS Backup. Se l'abbonamento viene rinnovato durante questo periodo, i dati possono essere riattivati. 
+
+
+| Deprovisioning | 61 o più giorni | Cancellato: Tutti i dati vengono cancellati e l'account tenant viene rimosso. 
+|===

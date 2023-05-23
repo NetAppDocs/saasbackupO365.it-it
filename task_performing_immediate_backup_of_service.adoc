@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: task_performing_immediate_backup_of_service.html 
+keywords: netapp, saas backup, microsoft 365, perform, performing, immediate, backup, service 
+summary: Se necessario, è possibile eseguire un backup immediato di qualsiasi servizio Microsoft 365. 
+---
+= Eseguire un backup immediato di un servizio
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se necessario, è possibile eseguire un backup immediato di qualsiasi servizio Microsoft 365.
+
+.Fasi
+. Dalla dashboard, fare clic sul numero riportato sopra *PROTECTED* nella casella del servizio per il quale si desidera eseguire un backup immediato.
+. Selezionare l'opzione di backup.
++
+.. Per Exchange
++
+*** Se si esegue il backup delle caselle di posta condivise, fare clic sulla scheda *SHARED*.
+*** Se si esegue il backup delle cassette postali di archiviazione, fare clic sulla scheda *ARCHIVIO*.
+*** Se si esegue il backup delle normali caselle postali, rimanere nella scheda *UTENTE*.
+
+
+.. Per SharePoint
++
+*** Se si esegue il backup dei siti, rimanere nella scheda *SITI*.
+
+
+.. Per OneDrive
++
+*** Se si esegue il backup degli utenti, rimanere nella scheda *UTENTE*.
+
+
+.. Per gruppi Microsoft 365
++
+*** Se si esegue il backup dei gruppi, rimanere nella scheda *GROUPS*.
+*** Se si esegue il backup dei team, fare clic sulla scheda *TEAM*.
++
+
+NOTE: Il backup dei messaggi di TeamsChat viene eseguito solo se TeamsChat è attivato nelle impostazioni. Contatto link:https://mysupport.netapp.com/["Supporto"] per attivare questa funzione.
+
++
+
+NOTE: A causa delle limitazioni delle API, il backup SaaS non può distinguere tra canali pubblici e privati.
+
+
+
+
+
+. Selezionare gli elementi di cui si desidera eseguire il backup.
+. Fare clic su *Backup Now*.
++
+image:backup_now.gif["Pulsante Backup now (Backup ora)"]
+
++
+Viene visualizzato un messaggio che indica che i servizi selezionati verranno inseriti nella coda dei processi per il backup.
+
+. Fare clic su *Conferma*. Viene visualizzato un messaggio che indica che il processo di backup è stato creato.
+. Fare clic su *View the job progress* (Visualizza avanzamento processo) per monitorare l'avanzamento del backup.
+

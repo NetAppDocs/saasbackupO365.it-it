@@ -1,0 +1,116 @@
+---
+sidebar: sidebar 
+permalink: task_performing_granular_level_restore_onedrive.html 
+keywords: netapp, saas backup, perform, performing, restore, microsoft 365, high-level restores, granular restores, Microsoft OneDrive for Business 
+summary: È possibile utilizzare SaaS Backup per Microsoft 365 per eseguire ripristini di livello granulare e di alto livello per Microsoft OneDrive for Business. 
+---
+= Eseguire un ripristino granulare per Microsoft OneDrive for Business
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+In Microsoft OneDrive for Business, è possibile ripristinare elementi granulari, come cartelle o file singoli, per un elenco o una libreria. Puoi anche ripristinare i blocchi appunti o i gruppi di OneNote.
+
+Per impostazione predefinita, solo il backup più recente è disponibile per il ripristino. Altre opzioni disponibili includono:
+
+image:backup_for_restore_availability.png["Backup disponibili per il ripristino"]
+
+La tabella indica le opzioni di ripristino supportate per gli elementi granulari di OneDrive for Business.
+
+[cols="20,20a,20a,20a,40"]
+|===
+| Tipo di elemento | Ripristinare sullo stesso MySite | Ripristinare su un altro MySite | Esportare i dati | Dove trovarlo in SaaS Backup 
+
+
+| Disco singolo  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| OneDrive for Business > My Sites 
+
+
+| Dischi multipli  a| 
+No
+ a| 
+No
+ a| 
+No
+| OneDrive for Business > My Sites 
+
+
+| Cartelle singole/multiple  a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+| OneDrive per il business > My Sites > <Drive Name> > Files 
+
+
+| Elementi singoli/multipli  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+| OneDrive per il business > My Sites > <Drive name> > Files 
+
+
+| Cartelle dei notebook  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+| OneDrive per il business > My Sites > <Drive name> > Files 
+
+
+| OneNote cartelle singole/multiple  a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+| OneDrive per il business > My Sites > <Drive name> > Files > notebook 
+|===
+.Fasi
+. Dalla dashboard, fare clic sul numero riportato sopra *PROTECTED* nella casella OneDrive.
+. Fare clic sul sito MySite per il quale si desidera eseguire il ripristino.
+. Selezionare il gruppo di file.
++
+Se si desidera ripristinare singole cartelle o file all'interno di un gruppo, fare clic sul gruppo di file. Per ripristinare un'intera cartella, selezionarla. Per ripristinare singoli file all'interno di una cartella, selezionare la cartella contenente i file, quindi selezionare i singoli file.
+
+. Fare clic su *Restore* (Ripristina).
+. Selezionare un'opzione di ripristino:
++
+** *Ripristinare sullo stesso MySite*
++
+Se si ripristinano singoli file nello stesso MySite, per impostazione predefinita, viene creata una cartella di ripristino con la data e l'ora correnti nella posizione del contenuto originale contenente la copia di backup.
+
++
+Se si seleziona *Sostituisci il contenuto esistente*, i dati correnti vengono completamente sostituiti dal backup.
+
+** *Ripristina su un altro MySite*
++
+Se si esegue il ripristino su un altro MySite, è necessario immettere il MySite di destinazione nel campo di ricerca. È possibile digitare una parte del MySite di destinazione nel campo di ricerca per avviare una ricerca automatica dei MySites di destinazione corrispondenti.
+
+** *Esporta dati*
++
+Se si esportano dati, è necessario scaricarli. Accedere a Reporting (rapporti) nel menu di sinistra. Trova il tuo lavoro di esportazione dei dati. Fare clic su *Total Folders* (cartelle totali). Quindi fare clic su *Export Data Download link*. Un file zip viene scaricato. Aprire il file zip per estrarre i dati.
+
++
+
+NOTE: Se si seleziona l'opzione di ripristino *Esporta dati*, il collegamento fornito è valido per sette giorni e viene pre-autenticato.
+
+
+
+. Fare clic su *Conferma*.
+. Fare clic su *View the job progress* (Visualizza avanzamento del processo) per monitorare l'avanzamento del ripristino.
+

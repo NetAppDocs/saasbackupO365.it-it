@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: task_creating_rules.html 
+keywords: netapp, saas backup, microsoft 365, create, creating, rules, user, users, applied 
+summary: Le regole consentono di spostare automaticamente gli utenti su un livello di backup preselezionato in base a criteri predefiniti. 
+---
+= Creare nuove regole
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le regole consentono di spostare automaticamente gli utenti su un livello di backup preselezionato in base a criteri predefiniti.
+
+È possibile creare regole per Microsoft Exchange Online, OneDrive for Business, SharePoint Online e Microsoft Office 365 Groups.
+
+È necessario applicare un filtro definito dall'utente ai dati prima di poter creare una regola. I filtri applicati vengono visualizzati sotto l'icona *Filter*. I filtri predefiniti di NetApp SaaS Backup per Microsoft 365 sono visualizzati in grigio. I filtri definiti dall'utente vengono visualizzati in blu chiaro.image:rules.gif["Esempio di filtro definito dall'utente e filtro SaaS Backup Defined per la creazione di regole"]
+
+<<task_creating_user_defined_filter.adoc#creating-user-defined-filter,Creare un filtro definito dall'utente>>
+
+È possibile creare più regole. Le regole vengono applicate nell'ordine in cui appaiono nell'elenco *Gestisci regole*.
+
+.Fasi
+. Dalla dashboard, fare clic sul numero riportato sopra *NON PROTETTO* nella casella del servizio per il quale si desidera creare le regole.
++
+image:number_protected_unprotected.gif[""]
+
++
+Se non viene applicato alcun filtro creato dall'utente, image:create_rule.gif["Schermata del pulsante create rule (Crea regola)"] non viene visualizzato.
+
+. Fare clic su *Filter* (filtro).
++
+image:filter.gif["Pulsante Filter (filtro)"]
+
+. Fare clic sul menu a discesa *Select* e selezionare il filtro. Viene visualizzato un campo di ricerca.
+. Immettere i criteri di ricerca.
+. Fare clic su *Applica filtro*.
+. Fare clic su *Create Rule* (Crea regola).
+. Immettere un nome per la regola.
+. In *Destination Group* (Gruppo di destinazione), selezionare il livello in cui si desidera spostare gli utenti che soddisfano i criteri della regola.
+. Selezionare *Apply to Existing ITEMS* (Applica agli elementi esistenti) se si desidera applicare immediatamente la regola a tutti gli elementi non protetti. Se questa opzione non è selezionata, la regola viene applicata agli elementi rilevati di recente e agli elementi non protetti al successivo rilevamento di nuovi elementi.
+. Se si dispone di più regole, fare clic su image:up_down_rules_icon.gif["Pulsante per spostare le regole in alto o in basso in priorità"] per spostare una regola verso l'alto o verso il basso nell'elenco. Le regole vengono applicate nell'ordine in cui vengono visualizzate nell'elenco.
+

@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: task_applying_rules.html 
+keywords: netapp, saas backup, microsoft 365, creating, rules, managing, adding, apply, applied, applying 
+summary: 'È possibile applicare le regole esistenti agli elementi non protetti, modificare l"ordine di applicazione delle regole ed eliminare le regole.' 
+---
+= Applicare le regole esistenti
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le regole consentono di spostare automaticamente gli utenti su un livello di backup preselezionato in base a criteri predefiniti.
+
+È possibile applicare le regole esistenti agli elementi non protetti, modificare l'ordine di applicazione delle regole ed eliminare le regole.
+
+.Fasi
+. Dalla dashboard, fare clic sul numero riportato sopra *NON PROTETTO* nella casella del servizio per il quale si desidera creare le regole.
++
+image:number_protected_unprotected.gif[""]
+
+. Fare clic su *Filter* (filtro).
++
+image:filter.gif["Schermata del pulsante del menu a discesa del filtro"]
+
+. Fare clic su *regole*. Vengono visualizzate le regole esistenti.
+. Fare clic su *Apply Now* (Applica ora) per applicare la regola agli elementi non protetti esistenti.
+

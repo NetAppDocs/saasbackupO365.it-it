@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: task_releasing_a_user_license.html 
+keywords: netapp, saas backup, release, releasing, reassigned, user, license, shared, regular, archive, mailbox 
+summary: Qualsiasi utente di mailbox standard o di archivio, protetto o non protetto, utilizza una licenza. Se una licenza non è più necessaria per un determinato utente, è possibile rilasciarla in modo da poterla riassegnare. 
+---
+= Rilasciare una licenza utente
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Qualsiasi utente di mailbox standard o di archivio, protetto o non protetto, utilizza una licenza. Se una licenza non è più necessaria per un determinato utente, è possibile rilasciarla in modo da poterla riassegnare. Quando viene rilasciata una licenza utente, l'utente viene spostato nel Tier non protetto e i backup di tale utente vengono interrotti.
+
+
+NOTE: Le caselle di posta condivise non utilizzano una licenza.
+
+.Fasi
+. Fare clic su image:configure_icon.gif["Schermata dell'icona di configurazione"] Accanto all'id utente SaaS Backup nell'angolo in alto a sinistra.
+. Selezionare *IMPOSTAZIONI ACCOUNT*.
+. FARE CLIC SU *MANTIENI ED ELIMINA*.
+. In *Release License*, iniziare a digitare il nome dell'account dell'utente di cui si desidera rilasciare la licenza.
+. Una volta trovato l'account, selezionarlo dall'elenco a compilazione automatica e fare clic su image:bluecircle_icon.gif["Icona blu con il segno più"].
+. Aggiungere altri account, se necessario.
+. Fare clic su *Release* (rilascia).
+. Fare clic su *Sì, rilasciare le licenze*.
+. Fare clic su *Conferma*.
+

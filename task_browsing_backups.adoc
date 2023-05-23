@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: task_browsing_backups.html 
+keywords: netapp, saas backup, Microsoft, microsoft 365, protected, protected instances, backup, backed up items, backups, browse, browsing, OneDrive, SharePoint, Exchange, Microsoft 365 Groups, date range, days, items, user, users, group, groups 
+summary: È possibile sfogliare i backup in tutti i servizi Microsoft 365. 
+---
+= Sfoglia i backup
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile sfogliare le istanze protette in backup recenti o in tutti i backup per Microsoft 365 Exchange, SharePoint, OneDrive for Business e Groups.
+
+
+NOTE: L'impostazione predefinita di ricerca è *Mostra backup ultimi 5 giorni*. Se si seleziona 5 giorni, vengono visualizzati solo gli elementi di cui è stato eseguito il backup negli ultimi 5 giorni. È possibile modificare l'intervallo di tempo in base alle esigenze.
+
+Per essere sicuri di trovare ciò che si sta cercando, controllare la data a sinistra del menu a discesa Time range (intervallo di tempo).
+
+image:8_october_last_5_days_backup_highlight_date_&_count.png["l'immagine evidenzia la data e il numero per la ricerca della casella postale di un utente"]
+
+.Fasi
+. In *Dashboard*, selezionare il servizio che si desidera cercare per i backup, quindi selezionare istanze protette.
++
+image:number_protected_unprotected_highlight_protected.gif["Istanze di Exchange protette evidenziate"]
+
+. Selezionare l'account che si desidera cercare.
+. Selezionare l'intervallo di tempo per gli elementi di cui si desidera eseguire il backup.
++
+image:date_range_browse_feature.gif["L'immagine mostra le opzioni dell'intervallo di tempo per l'esplorazione dei backup"]
+
++
+
+NOTE: *Visualizza cronologia backup* mostra una vista calendario dei backup. Se si seleziona *View Backup History* (Visualizza cronologia backup) e si seleziona una data precedente al giorno corrente, viene modificato l'intervallo di tempo per i backup visualizzati. Ad esempio, se oggi è l'8 ottobre, si seleziona il 5 ottobre nella vista calendario, quindi si seleziona per sfogliare gli ultimi 5 giorni a partire dal 5 ottobre, gli elementi che è possibile sfogliare saranno dal 1-5 ottobre.
+
+. Fare clic sul tipo di elementi che si desidera visualizzare: Mail, Calendario, attività, Contatti, file, Contenuto o altro.
+. Sfogliare gli elementi di cui è stato eseguito il backup.
+

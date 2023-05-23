@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: task_purging.html 
+keywords: netapp, saas backup, microsoft 365, purge, purged, purging, site collection, groups 
+summary: 'Puoi gestire il tuo servizio in vari modi all"interno di NetApp SaaS Backup, tra cui l"attivazione di nuovi servizi, la disattivazione di servizi esistenti, la cancellazione dei dati e l"annullamento di un lavoro.' 
+---
+= Eliminare un utente, una raccolta di siti o un gruppo Microsoft 365
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile rimuovere completamente tutti i dati associati a un utente, a una raccolta di siti o a un gruppo Microsoft 365. I dati rimossi sono ripristinabili per sette giorni. Dopo sette giorni, i dati vengono cancellati in modo permanente e la licenza utente viene rilasciata automaticamente.
+
+.Fasi
+. Fare clic sull'icona di configurazione image:configure_icon.gif["Schermata dell'icona di configurazione"] Accanto all'id utente SaaS Backup nell'angolo in alto a sinistra.
+. Selezionare *IMPOSTAZIONI ACCOUNT*.
+. FARE CLIC SU *MANTIENI ED ELIMINA*.
+. In *Rimuovi dati*, selezionare *tipo di servizio* (Exchange, OneDrive o SharePoint) dal menu a discesa.
+. Cercare l'utente, la raccolta di siti o il gruppo Microsoft 365 che si desidera eliminare. Per Microsoft Exchange Online o OneDrive for Business, immettere il nome dell'utente o del gruppo Microsoft 365. Per SharePoint Online, immettere il nome della raccolta siti. + NOTA: Se l'utente dispone di una mailbox di archiviazione, il nome utente della mailbox di archiviazione è preceduto da "Archivio in-place".
+. Una volta visualizzato il risultato della ricerca, fare clic su image:bluecircle_icon.gif["Icona blu con il segno più"] Per selezionare l'utente, la raccolta di siti o il gruppo Microsoft 365.
+. Fare clic su *Save* (Salva).
+. Fare clic su *Sì* per confermare che si desidera eliminare i dati.
+

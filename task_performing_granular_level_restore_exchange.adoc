@@ -1,0 +1,185 @@
+---
+sidebar: sidebar 
+permalink: task_performing_granular_level_restore_exchange.html 
+keywords: netapp, saas backup, perform, performing, restore, microsoft 365, granular restores, Microsoft Exchange Online, archive, archive, shared, mailboxes, self service portal 
+summary: È possibile utilizzare SaaS Backup per Microsoft 365 per eseguire ripristini granulari di livello per Microsoft Exchange Online 365. 
+---
+= Eseguire un ripristino granulare per Microsoft Exchange Online
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+In Microsoft Exchange Online, è possibile ripristinare elementi granulari per un singolo utente, ad esempio e-mail, attività, contatti ed eventi del calendario. È inoltre possibile ripristinare elementi granulari per una casella postale di gruppo Microsoft 365.
+
+Per impostazione predefinita, solo il backup più recente è disponibile per il ripristino. Altre opzioni disponibili includono:
+
+image:backup_for_restore_availability.png["Backup disponibili per il ripristino"]
+
+La tabella indica le opzioni di ripristino supportate per gli elementi granulari di Exchange Online.
+
+[cols="20a,15a,15a,15a,40a"]
+|===
+| Tipo di elemento | Ripristinare nella stessa mailbox | Ripristinare in un'altra mailbox | Esportare in PST/esportare in HTML | Dove trovarlo in SaaS Backup 
+
+
+ a| 
+Mail/attività/Contatti/ecc.
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Exchange Online > Mailbox - utenti
+
+
+
+ a| 
+Cartelle di caselle postali singole/multiple (posta in arrivo, archivio, ecc.)
+
+*Nota*: Esclusa la cronologia delle conversazioni.
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Exchange online > caselle postali - utenti > <User Name>
+
+
+
+ a| 
+Livello di cartella sotto Inbox
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Exchange online > caselle postali - utenti > <User Name>
+
+
+
+ a| 
+Livello di sottocartella sotto Inbox
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+Exchange online > caselle postali - utenti > <User Name>
+
+
+
+ a| 
+Cronologia delle conversazioni nella cartella Mail
+ a| 
+No
+ a| 
+No
+ a| 
+Sì
+ a| 
+Exchange online > caselle postali - utenti > <User Name>
+
+
+
+ a| 
+Ripristini a livello di elemento singolo/multiplo
+ a| 
+Sì
+ a| 
+Sì
+ a| 
+No
+ a| 
+Exchange online > caselle postali - utenti > <User Name>
+
+
+
+ a| 
+Elementi di ripristino singoli/multipli per "sostituire il contenuto esistente"
+ a| 
+Sì
+ a| 
+No
+ a| 
+No
+ a| 
+Exchange online > caselle postali - utenti > <User Name>
+
+|===
+.Fasi
+. Dalla dashboard, fare clic sul numero sopra *PROTECTED* nella casella Exchange.
++
+image:number_protected_exchange.gif["Numero di istanze protette in Exchange"]
+
+. Selezionare l'opzione di ripristino.
++
+.. Per le mailbox condivise, fare clic sulla scheda *SHARED*.
+.. Per le cassette postali di archiviazione, fare clic sulla scheda *ARCHIVIO*.
+.. Per le normali caselle postali, rimanere nella scheda *UTENTE*.
+
+
+. Fare clic sulla mailbox per la quale si desidera eseguire il ripristino granulare.
+. Ripristinare un'intera categoria di Microsoft Office Exchange o ripristinare un elemento specifico all'interno di una categoria. Per una casella postale Microsoft 365 Groups, è possibile eseguire il ripristino solo dalla categoria di posta o dal calendario.
+. Selezionare la categoria (posta, attività, Contatti o Altro) da ripristinare.
++
+
+NOTE: Se si desidera ripristinare un singolo elemento all'interno della categoria, fare clic sulla categoria, quindi selezionare gli elementi da ripristinare.
+
+. Fare clic su *Restore* (Ripristina).
+. Selezionare un'opzione di ripristino.
++
+** *Ripristina nella stessa mailbox*
++
+Se si ripristina nella stessa mailbox, per impostazione predefinita, viene creata una cartella di ripristino con data e ora correnti nella posizione del contenuto originale contenente la copia di backup. Se si seleziona *Sostituisci il contenuto esistente*, i dati correnti vengono completamente sostituiti dal backup.
+
++
+Per i gruppi Microsoft 365, è possibile eseguire il ripristino solo nella stessa casella postale. Il contenuto esistente viene sostituito per impostazione predefinita. Per Microsoft Exchange Online, è possibile eseguire il ripristino nella stessa mailbox e sostituire il contenuto esistente oppure eseguire il ripristino in un'altra mailbox.
+
+** *Ripristina in un'altra mailbox*
++
+Se si esegue il ripristino in un'altra mailbox, è necessario immettere la mailbox di destinazione nel campo di ricerca. È possibile digitare una parte dell'indirizzo di posta elettronica di destinazione nel campo di ricerca per avviare una ricerca automatica delle caselle postali di destinazione corrispondenti.
+
+** *Esporta in PST*
++
+È possibile scegliere di includere tutte le sottocartelle delle categorie.
+
++
+Se si esporta in PST, al termine dell'esportazione si riceverà un'e-mail di notifica con la posizione del file PST.
+
++
+
+NOTE: Questa opzione non è disponibile per i gruppi Microsoft 365.
+
++
+
+NOTE: Se si seleziona l'opzione di ripristino *Esporta in PST*, il collegamento fornito è valido per sette giorni ed è pre-autenticato.
+
+** *Esporta in dati* (disponibile solo per gruppi Microsoft 365):
++
+Se si esegue l'esportazione, vengono creati due file zip, un file zip per la casella postale Microsoft 365 Groups e un altro file zip per i siti Microsoft 365 Groups SharePoint. Riceverai un'e-mail di notifica contenente la posizione del file PST e un URL autenticato nella posizione del file .zip.
+
++
+
+NOTE: Se si seleziona l'opzione di ripristino *Esporta in dati*, il collegamento fornito è valido per sette giorni e viene pre-autenticato.
+
+
+
+. Fare clic su *Conferma*.
++
+Viene visualizzato un messaggio che indica che il processo di ripristino è stato creato.
+
+. Fare clic su *View the job progress* (Visualizza avanzamento del processo) per monitorare l'avanzamento del ripristino.
+

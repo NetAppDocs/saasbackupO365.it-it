@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task_viewing_deleted.html 
+keywords: netapp, saas backup, microsoft 365, view, viewing, jobs, deleted, items, SharePoint, Exchange, OneDrive, Groups, Teams 
+summary: 'È possibile visualizzare gli elementi eliminati da tutti i servizi attivando l"opzione elementi cancellati da Impostazioni servizio.' 
+---
+= Visualizzare gli elementi cancellati
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Puoi visualizzare gli elementi cancellati in tutti i servizi in qualsiasi momento attivando *Mostra elementi cancellati* in Impostazioni servizio. In questo modo è possibile risparmiare tempo; invece di sfogliare diversi backup per gli elementi cancellati, attivare lo switch per trovare immediatamente gli elementi cancellati.
+
+Per impostazione predefinita, lo switch è disattivato.
+
+.Fasi
+. Fare clic su *SERVICES* nel riquadro di navigazione a sinistra.
+. Fare clic sull'icona Impostazioni image:settings_icon.gif["L'immagine mostra l'icona delle impostazioni"].
++
+image:show_deleted_items_switch_off.gif["L'immagine mostra lo spegnimento degli elementi cancellati"]
+
+. Attivare l'opzione *Mostra elementi cancellati*.
++
+image:show_deleted_items_switch_on.gif["L'immagine mostra l'attivazione degli elementi cancellati e le impostazioni di backup aggiornate"]
+
+. Fare clic su *Jobs* nel riquadro di spostamento di sinistra.
+. Aprire il backup più recente per visualizzare gli elementi eliminati.
+

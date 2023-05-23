@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: task_enabling_onenote_backups.html 
+keywords: netapp, saas backup, microsoft 365, backup, setting, enable, enabling, onenote 
+summary: È possibile attivare i backup per i notebook OneNote. 
+---
+= Attiva i backup per OneNote
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Per impostazione predefinita, i backup per i notebook OneNote sono abilitati per le note. Se si desidera eseguire il backup dei notebook OneNote, è necessario attivare il backup nel servizio desiderato.
+
+.Fasi
+. Fare clic su *Services* (servizi) nel riquadro di navigazione a sinistra.
++
+image:services.gif["Schermata del pulsante servizi"]
+
+. Fare clic su Microsoft 365.
++
+image:mso365_settings.gif["Schermata del pulsante Microsoft 365"]
+
+. In *Manage Services* (Gestisci servizi), fare clic sull'icona delle impostazioni di backup image:configure_icon.gif["Schermata dell'icona di configurazione"] accanto al servizio da aggiornare.
++
+Viene visualizzato un elenco delle impostazioni di backup disponibili per il servizio selezionato.
+
+. SELEZIONARE *ENABLE ONENOTE BACKUP* (ATTIVA BACKUP ONENOTE).
+. Fare clic su *Conferma*. I notebook verranno inclusi nel prossimo backup pianificato. Se si desidera eseguire immediatamente il backup, eseguire una link:task_performing_immediate_backup_of_service.html["backup immediato"].
+

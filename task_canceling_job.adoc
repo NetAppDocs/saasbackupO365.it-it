@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: task_canceling_job.html 
+keywords: netapp, saas backup, microsoft 365, cancel, canceling, jobs, backup, restore, immediate 
+summary: Se è stato avviato un backup immediato o un ripristino immediato, ma è necessario annullarlo prima che venga completato, è possibile farlo. 
+---
+= Annullare un lavoro
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Se è stato avviato un backup immediato o un ripristino immediato, ma è necessario annullarlo prima che venga completato, è possibile farlo.
+
+.Fasi
+. Fare clic su image:jobs_button.gif["Schermata del pulsante dei job"] dal riquadro di navigazione di sinistra.
+. Nella sezione *processi recenti in esecuzione*, fare clic sul processo che si desidera annullare.
+. Fare clic su *Annulla*. L'avanzamento del lavoro annullato viene visualizzato in *lavori completati recenti*.
+

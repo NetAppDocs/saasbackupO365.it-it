@@ -1,0 +1,47 @@
+---
+sidebar: sidebar 
+permalink: task_creating_user_defined_filter.html 
+keywords: netapp, saas backup, microsoft 365, create, creating, view, filtering, data, information, user defined filters, creating filters, search, viewing, job history, activity log, downloading log 
+summary: È possibile filtrare la visualizzazione di caselle postali, siti o siti personali per visualizzare solo i risultati che corrispondono a criteri specifici. 
+---
+= Creare un filtro definito dall'utente
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile filtrare la visualizzazione di caselle postali, siti o siti personali per visualizzare solo i risultati che corrispondono a criteri specifici. Ad esempio, è possibile impostare i filtri per visualizzare solo le caselle postali di un determinato paese e di un determinato reparto all'interno di tale paese.
+
+.Fasi
+. Dalla dashboard, fare clic sul numero sopra *PROTECTED* o *UNPROTECTED* nella casella del servizio per cui si desidera creare un filtro. Il numero SOPRA PROTETTO indica il numero di caselle postali, siti personali o gruppi attualmente protetti da un criterio di backup. Il numero riportato sopra NON PROTETTO indica il numero di caselle postali, siti personali o gruppi non protetti da un criterio di backup.
++
+image:number_protected_unprotected.gif[""]
+
+. Fare clic su *Filter* (filtro).
++
+image:filter.gif["Schermata del pulsante del menu a discesa del filtro"]
+
+. Fare clic sul menu a discesa *Select* e selezionare il filtro desiderato.
++
+Per Microsoft SharePoint Online, è possibile filtrare in base all'ID modello. È possibile inserire l'ID modello per cercarlo oppure selezionarlo dal menu a discesa.
+
++
+Per tutti gli altri servizi, è possibile filtrare per gruppo, paese, ufficio, reparto, titolo, dominio o paese. Se si dispone di gruppi di protezione, questi vengono anche elencati come opzioni di filtraggio.
+
++
+Il secondo menu a discesa contiene le selezioni in base al filtro selezionato. Ad esempio, se si seleziona Gruppo come primo filtro, è possibile selezionare uno dei Tier dei gruppi di criteri di backup come filtro secondario.
+
++
+image:select_filter.gif["Schermata del primo set di opzioni di filtro"]
+
++
+Viene visualizzato un campo di ricerca.
+
+. Immettere i criteri di ricerca.
+. Se si desidera aggiungere altri filtri, fare clic su *Aggiungi filtro* ed effettuare la selezione.
+. Fare clic su *Applica filtro*. Vengono visualizzati i risultati del filtro.
+

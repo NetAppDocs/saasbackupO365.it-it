@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task_restoring_from_previous_backup.html 
+keywords: netapp, saas restore, restoring, microsoft 365, high-level restores, granular restores, Microsoft Exchange Online, Microsoft OneDrive for Business, Microsoft SharePoint Online, archive, archive, shared, mailboxes 
+summary: Per impostazione predefinita, solo il backup più recente è disponibile per il ripristino. 
+---
+= Ripristinare da un backup precedente
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Per impostazione predefinita, solo il backup più recente è disponibile per il ripristino.
+
+.Fasi
+. Dalla dashboard, fare clic sul numero riportato sopra *PROTECTED* nella casella del servizio per il quale si desidera eseguire il ripristino.
++
+** Per le mailbox condivise, fare clic sulla scheda *SHARED*.
+** Per le cassette postali di archiviazione, fare clic sulla scheda *ARCHIVIO*. Nota: Le mailbox di archivio vengono ripristinate nella normale mailbox dell'utente.
+** Per le normali caselle postali, rimanere nella scheda *UTENTE*.
+
+
+. Fare clic sull'elemento che si desidera ripristinare.
+. Fare clic su *View Backup History* (Visualizza cronologia backup).
++
+Viene visualizzato un calendario. Le date per le quali sono disponibili i backup sono indicate da un cerchio verde.
+
+. Se si desidera visualizzare gli elementi di cui è stato eseguito il backup in un determinato numero di giorni, fare clic su *Show Selected Backups* (Mostra backup selezionati) e selezionare uno dei giorni predefiniti dal menu a discesa.
+. In caso contrario, fare clic sulla data del backup che si desidera ripristinare, quindi selezionare il backup specifico.
+. Selezionare gli elementi che si desidera ripristinare.
+. Fare clic su image:restore.gif["immagine del pulsante di ripristino"]
+. Selezionare un'opzione di ripristino:
++
+.. Se si ripristinano le cassette postali per *Microsoft Exchange Online* o una casella postale per un gruppo Microsoft 365, selezionare una delle seguenti opzioni:
++
+*** *Ripristina nella stessa mailbox*
++
+Se si esegue il ripristino nella stessa mailbox, per impostazione predefinita, viene creata una cartella di ripristino con la data e l'ora correnti nella posizione del contenuto originale contenente la copia di backup. Se si seleziona *Sostituisci il contenuto esistente*, i dati correnti vengono completamente sostituiti dal backup.
+
+*** *Ripristina in un'altra mailbox*
++
+Se si esegue il ripristino in un'altra mailbox, è necessario immettere la mailbox di destinazione nel campo di ricerca. È possibile digitare una parte dell'indirizzo di posta elettronica di destinazione nel campo di ricerca per avviare una ricerca automatica delle caselle postali di destinazione corrispondenti.
+
+
+
+.. Se stai ripristinando MySites per *Microsoft OneDrive for Business*, seleziona una delle seguenti opzioni:
++
+*** *Ripristinare sullo stesso MySite*
++
+Se si ripristinano singoli file nello stesso MySite, per impostazione predefinita, viene creata una cartella di ripristino con la data e l'ora correnti nella posizione del contenuto originale contenente la copia di backup. Se si seleziona *Sostituisci il contenuto esistente*, i dati correnti vengono completamente sostituiti dal backup. Se si sta ripristinando un'intera cartella, l'opzione *Sostituisci il contenuto esistente* non è disponibile.
+
+*** *Ripristinare su un sito MySite diverso*
++
+Se si esegue il ripristino su un sito MySite diverso, è necessario inserire il sito MySite di destinazione nel campo di ricerca. È possibile digitare una parte del MySite di destinazione nel campo di ricerca per avviare una ricerca automatica dei MySites di destinazione corrispondenti.
+
+
+
+.. Se si ripristinano siti per *Microsoft SharePoint Online*, è possibile eseguire il ripristino sullo stesso sito o su un sito diverso. Se si sta ripristinando un sito di gruppo Microsoft 365, è possibile eseguire il ripristino solo nello stesso sito.
++
+*** *Ripristinare sullo stesso sito*
++
+Se si esegue il ripristino nello stesso sito, per impostazione predefinita viene creata una cartella di ripristino con la data e l'ora correnti nella posizione del file originale contenente la copia di backup. Se si seleziona l'opzione *Sovrascrivi con Unione*, non viene creata alcuna cartella di ripristino. Se la versione del file di backup e il file corrente corrispondono, il backup viene ripristinato nella posizione originale. Qualsiasi nuovo contenuto nella destinazione viene ignorato e non viene influenzato. Ad esempio, se il backup contiene File1 versione 5 e la destinazione contiene File1 versione 6, un ripristino con l'opzione *Sovrascrivi con Unione* selezionata non riesce. Se si seleziona l'opzione *Sostituisci il contenuto esistente*, la versione corrente dei dati viene sostituita completamente con la copia di backup.
+
+*** *Ripristinare su un sito diverso*
++
+Se si esegue il ripristino su un sito diverso, è necessario inserire il sito di destinazione nel campo di ricerca. È possibile digitare una parte del sito di destinazione nel campo di ricerca per avviare una ricerca automatica dei siti corrispondenti.
+
+
+
+
+
+. Fare clic su *Conferma*.
++
+Viene visualizzato un messaggio che indica che il processo di ripristino è stato creato.
+
+. Fare clic su *View the job progress* (Visualizza avanzamento del processo) per monitorare l'avanzamento del ripristino.
+

@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task_performing_immediate_backup_of_policy.html 
+keywords: netapp, saas backup, microsoft 365, getting started, perform, performing, immediate, backup, backup policy 
+summary: 'La guida introduttiva a SaaS Backup per Microsoft 365 include la scelta del tipo di storage da utilizzare per il backup dei dati, la raccolta di informazioni pertinenti, la creazione di un account di servizio Microsoft 365 e l"assegnazione delle autorizzazioni utente.' 
+---
+= Eseguire un backup immediato di una policy di backup specifica
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando si imposta SaaS Backup per Microsoft 365, per impostazione predefinita, tutti i dati non sono protetti. Dopo aver spostato i dati in un Tier protetto, è possibile eseguire un backup immediato del Tier in cui sono stati spostati i dati. In questo modo si evita che i dati siano a rischio fino al primo backup pianificato. Se è possibile attendere il primo backup pianificato, non è necessario eseguire un backup immediato.
+
+È possibile eseguire un backup immediato in qualsiasi momento si ritenga necessario per la protezione dei dati. Se si utilizza una versione di prova di SaaS Backup per Microsoft 365, è possibile eseguire solo tre backup immediati al giorno per servizio.
+
+.Fasi
+. Dalla dashboard, selezionare il servizio per il quale si desidera eseguire un backup immediato.
+. In *Backup Policies* (Criteri di backup), fare clic sul Tier di cui si desidera eseguire il backup.
+. Fare clic su Backup Now (Backup ora)
++
+image:backup_now.gif["Schermata del pulsante SaaS Backup Now"]
+
++
+Viene visualizzato un messaggio che indica che i servizi nel Tier selezionato verranno inseriti nella coda dei processi per il backup immediato.
+
+. Fare clic su *Conferma*. Viene visualizzato un messaggio che indica che il processo di backup è stato creato.
+. Fare clic su *View the job progress* (Visualizza avanzamento processo) per monitorare l'avanzamento del backup.
+

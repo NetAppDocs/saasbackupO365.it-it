@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: task_setting_account_notifications.html 
+keywords: netapp, saas backup, microsoft 365, set, setting, account, notifications, notification, management, adding 
+summary: Con NetApp SaaS Backup per Microsoft 365 puoi gestire i tuoi account di servizio, scoprire nuovi account aggiunti e impostare le notifiche degli account. 
+---
+= Impostare le notifiche
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+È possibile aggiungere utenti alle notifiche dell'account e selezionare le notifiche specifiche che si desidera ricevere da ciascun utente. Ad esempio, è possibile scegliere di fare in modo che un utente riceva una notifica via email ogni volta che si verifica un errore di ripristino.
+
+.Fasi
+. Fare clic su *IMPOSTAZIONI ACCOUNT*.
+. Fare clic su *GESTIONE DELLE NOTIFICHE*.
+. Inserire l'indirizzo e-mail dell'account che si desidera ricevere.
+. Fare clic su *Aggiungi notifiche*. L'utente viene aggiunto sotto l'elenco degli account per le notifiche.
+. Selezionare le notifiche specifiche che si desidera ricevere dall'utente.
+. Fare clic su *Save* (Salva).
+

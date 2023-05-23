@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: task_enable_modern_authentication.html 
+keywords: saas backup, microsoft 365, setting, settings, enable, modern authentication, basic authentication, discovery, failure 
+summary: È possibile attivare la funzione Modern Authentication for SaaS Backup for Microsoft 365 per evitare errori di rilevamento per i gruppi Microsoft 365 e per le cassette postali condivise e di archiviazione. 
+---
+= Abilitare l'autenticazione moderna
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Microsoft 365 si rivolge a ottobre 2021 per la sostituzione dell'autenticazione di base in Exchange Online. Dopo la deprecazione, possono verificarsi errori di rilevamento per i gruppi Microsoft 365 e per le cassette postali Shared e Archive.
+
+È possibile attivare l'autenticazione moderna in qualsiasi momento.
+
+I nuovi clienti non devono intraprendere alcuna azione. L'autenticazione moderna viene attivata al momento della registrazione.
+
+I clienti esistenti devono agire. Seguire le istruzioni riportate di seguito per attivare l'autenticazione moderna.
+
+
+NOTE: Per attivare l'autenticazione moderna, accedere con le credenziali dell'account tenant; il nome dell'account si trova in Microsoft 365 Service Settings (Impostazioni servizio Microsoft) (vedere *opzione 2 passaggi* di seguito). Assicurarsi che il ruolo Global Administrator sia assegnato a questo account. Una volta abilitata la funzione di autenticazione moderna, è possibile rimuovere il ruolo di amministratore globale dall'utente amministratore.
+
+.Passaggi dell'opzione 1
+. Accedi a SaaS Backup per Microsoft 365. Viene visualizzato il seguente messaggio.image:enable_mod_auth_pop-up.png["Viene visualizzato un messaggio a comparsa per abilitare l'autenticazione moderna. L'autenticazione di base Microsoft viene disattivata a breve. Abilitare l'autenticazione moderna per evitare errori di rilevamento con gruppi Microsoft 365, cassette postali di archiviazione e cassette postali condivise. Attivarlo ora?"]
+. Selezionare *Confirm* (Conferma) per attivare l'autenticazione moderna.
+. Accettare tutte le autorizzazioni. L'autenticazione moderna è ora abilitata. L'account del servizio di configurazione ZZZ è stato rimosso.
+
+
+.Opzione 2 fasi
+. In SaaS Backup per Microsoft 365, accedere a Impostazioni image:settings_icon.png["icona ingranaggio"]> Impostazioni di servizio > Impostazioni di servizio Microsoft 365.image:microsoft365_service_settings.png["Freccia che indica le impostazioni del servizio Microsoft 365"]
+. Selezionare *Enable Modern Authentication* (attiva autenticazione moderna).image:enable_mod_auth_service_settings_button.png["Selezionare Enable Modern Authentication (attiva autenticazione moderna) da Service Settings (Impostazioni"]
+. Accettare tutte le autorizzazioni. L'autenticazione moderna è ora abilitata. L'account del servizio di configurazione ZZZ è stato rimosso.
+
+
+Se si riceve una notifica di errore, è possibile riprovare ad attivare l'autenticazione moderna.
+
+Per assistenza, inviare un'e-mail all'indirizzo saasbackupsupport@netapp.com.
+
+Per ulteriori informazioni, vedere link:https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-and-exchange-online-september-2021-update/ba-p/2772210["Basic Authentication and Exchange Online - aggiornamento di settembre 2021"].

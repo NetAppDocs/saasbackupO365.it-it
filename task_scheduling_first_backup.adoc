@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: task_scheduling_first_backup.html 
+keywords: netapp, saas backup, microsoft 365, getting started, schedule, scheduling, first, performing 
+summary: Quando si imposta SaaS Backup per Microsoft 365, per impostazione predefinita, i dati non sono protetti e non sono pianificati per il backup. Per avviare il primo backup, è necessario spostare i dati in un Tier protetto. 
+---
+= Pianifica il primo backup
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Quando si imposta SaaS Backup per Microsoft 365, per impostazione predefinita, i dati non sono protetti. È necessario spostare i dati dal Tier non protetto a uno dei Tier protetti in modo che il backup dei dati venga eseguito durante il successivo backup pianificato del Tier selezionato.
+
+.Fasi
+. Dalla dashboard, selezionare il servizio contenente i dati non protetti.
+. Fare clic su *view* (Visualizza) accanto al numero di caselle postali, siti, siti o gruppi non protetti.
+. Selezionare gli elementi che si desidera proteggere.
+. Fare clic sul menu *gruppi*.image:groups_menu.gif["Schermata del pulsante SaaS Backup Groups Menu (Menu gruppi di backup SaaS)"]
+. Selezionare il *Tier* del criterio di backup che si desidera assegnare. Vedere link:concept_backup_policies.html["Policy di backup"] per una descrizione dei livelli dei criteri di backup.
+. Fare clic su *Apply* (Applica).
+

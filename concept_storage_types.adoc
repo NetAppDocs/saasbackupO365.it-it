@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: concept_storage_types.html 
+keywords: netapp, saas backup, microsoft 365, getting started, storage, types, amazon s3, azure, blob 
+summary: Tipi di storage utilizzabili con SaaS Backup. 
+---
+= Tipi di storage utilizzabili con SaaS Backup
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+
+
+== SaaS Backup ha fornito storage
+
+SaaS Backup offre le seguenti opzioni di storage:
+
+* Amazon S3
+* Azure Blob
+

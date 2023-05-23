@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: task_viewing_history_and_activity.html 
+keywords: netapp, saas backup, microsoft 365, view, viewing, jobs, history, activity, log 
+summary: È possibile visualizzare o scaricare un registro delle attività e della cronologia delle mansioni di SaaS Backup. 
+---
+= Visualizzare la cronologia dei processi e il registro delle attività
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SaaS Backup per Microsoft 365 memorizza un registro della cronologia del tuo lavoro e un registro di tutte le attività eseguite all'interno di SaaS Backup.
+
+
+
+== Visualizzare la cronologia dei processi
+
+Puoi visualizzare o scaricare report di tutta la cronologia delle tue mansioni in NetApp SaaS Backup per Office 365. È possibile filtrare la ricerca in base al tipo di lavoro, al servizio, all'ora di inizio, all'ora di fine e allo stato di completamento.
+
+.Fasi
+. Fare clic su *Reporting* nel riquadro di navigazione a sinistra. Nella scheda *Job History* viene visualizzato un elenco di tutti i job di backup SaaS.
+. Per filtrare i risultati, fare clic su *Filter* (filtro).
+. Fare clic sul menu a discesa *Select* e selezionare un filtro. È possibile filtrare in base a policy, servizio, tipo o stato. Dopo aver selezionato un filtro, viene visualizzato un campo di ricerca.
+. Immettere i criteri di ricerca.
+. Se si desidera aggiungere altri filtri, fare clic su *Aggiungi filtro*.
+. Fare clic su *Applica filtro*. Vengono visualizzati i risultati del filtro.
+. Fare clic su qualsiasi lavoro per espandere la vista per ulteriori dettagli sul lavoro.
+
+
+
+
+== Visualizzare il registro delle attività
+
+Viene memorizzato un registro di tutte le attività che si verificano all'interno di SaaS Backup per Microsoft 365. Il registro contiene la data di ciascuna azione eseguita insieme al nome dell'utente che ha eseguito l'azione. È possibile filtrare il registro delle attività in base al servizio e all'evento. Ad esempio, se è necessario visualizzare tutte le operazioni di ripristino eseguite per Microsoft Exchange Online, è possibile filtrare il registro delle attività per visualizzare i risultati specifici.
+
+.Fasi
+. Fare clic su *Reporting* nel riquadro di navigazione a sinistra.
+. Fare clic sulla scheda *Registro attività*. Viene visualizzato un elenco di tutte le attività di backup SaaS per Microsoft 365.
+. Per filtrare i risultati, fare clic su *Filter* (filtro).
+. Fare clic sul menu a discesa *Select* e selezionare un filtro. È possibile filtrare in base al servizio o all'evento. Dopo aver selezionato un filtro, viene visualizzato un campo di ricerca.
+. Immettere i criteri di ricerca.
+. Se si desidera aggiungere altri filtri, fare clic su *Aggiungi filtro*.
+. Fare clic su *Applica filtro*.
++
+Vengono visualizzati i risultati del filtro.
+
+

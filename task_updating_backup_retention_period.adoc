@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: task_updating_backup_retention_period.html 
+keywords: netapp, saas backup, microsoft 365, backup, retention, period, update, updating, specific, tier, tenants 
+summary: È possibile aggiornare il periodo di tempo, in anni, in cui i dati vengono conservati per singoli livelli, caselle postali, siti e siti MySites a 7 anni, 10 anni o senza limiti. 
+---
+= Aggiornare il periodo di conservazione del backup
+:toc: macro
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
+
+
+[role="lead"]
+È possibile aggiornare il periodo di tempo, in anni, in cui i dati vengono conservati per singoli livelli, caselle postali, siti e siti MySites a 7 anni, 10 anni o senza limiti. SaaS Backup conserva i dati di backup per il periodo di conservazione se l'abbonamento è attivo. Se tutti i livelli di backup hanno lo stesso periodo di conservazione, è possibile eseguire un aggiornamento globale per modificare contemporaneamente il periodo di conservazione per tutti i tenant.
+
+
+
+== Aggiornare il periodo di conservazione del backup per un Tier specifico
+
+.Fasi
+. Dal pannello *Dashboard*, fare clic su un servizio qualsiasi.
+. In *Backup Policies* (Criteri di backup), fare clic sul menu a discesa accanto a *RETENTION PERIOD* (PERIODO DI CONSERVAZIONE) per il livello che si desidera modificare.
+. Selezionare il periodo di conservazione desiderato dall'elenco predefinito.
+. FARE CLIC SU *AGGIORNA PERIODO DI CONSERVAZIONE*.
+
+
+
+
+== Aggiornare il periodo di conservazione del backup per singoli utenti e tenant
+
+.Fasi
+. Fare clic sull'icona di configurazione image:configure_icon.gif["Icona di configurazione"] Accanto all'ID utente SaaS Backup nell'angolo in alto a sinistra.
+. Fare clic su *IMPOSTAZIONI ACCOUNT*.
+. FARE CLIC SU *MANTIENI ED ELIMINA*.
+. Per aggiornare il criterio di conservazione dei dati per un utente specifico in un servizio specifico, procedere come segue:
++
+.. In *Data Retention Policies* (Criteri di conservazione dei dati), fare clic sul menu a discesa accanto a *TYPE OF PROVIDER* (TIPO DI PROVIDER) e selezionare il provider.
+.. Fare clic sul menu a discesa accanto a *NOME SERVIZIO* e selezionare il servizio.
+.. Fare clic sul menu a discesa accanto a *PERIODO DI CONSERVAZIONE* e selezionare il periodo desiderato dall'elenco di orari preimpostati.
+.. Nella casella di ricerca, immettere l'utente, il sito o il sito che si desidera aggiornare.
+.. Selezionare l'utente, il sito o il sito MySite desiderato dai risultati corrispondenti.
+.. Fare clic su image:bluecircle_icon.gif["Segno più"].
+.. Continuare a cercare e aggiungere singole caselle postali, siti o siti personali in base alle esigenze.
+.. Fare clic su *Save* (Salva). Le singole caselle postali, i siti o i siti personali selezionati vengono aggiornati al periodo di conservazione selezionato.
+
+
+. Per aggiornare il criterio di conservazione dei dati a livello di tenant, procedere come segue:
++
+.. Sotto *Criteri di conservazione dei dati a livello di tenant*, fare clic sul menu a discesa accanto a *PERIODO DI CONSERVAZIONE* e selezionare il periodo desiderato dall'elenco degli orari preimpostati.
+.. Fare clic su *Save* (Salva). Tutti i livelli dei criteri di backup vengono aggiornati in base al periodo di conservazione selezionato.
+
+
+

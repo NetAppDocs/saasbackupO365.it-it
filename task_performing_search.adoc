@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: task_performing_search.html 
+keywords: netapp, saas backup, microsoft 365, search, searching, advanced search, perform, performing, exchange, sharePoint, oneDrive, online 
+summary: Puoi utilizzare la ricerca inline per trovare contenuti specifici. 
+---
+= Eseguire una ricerca
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+In SaaS Backup per Microsoft 365, puoi cercare i tuoi dati protetti in tutti i servizi: Exchange Online, SharePoint Online, OneDrive for Business, gruppi e team.
+
+È possibile cercare istanze non protette, ma otterrà risultati di ricerca solo se sono stati eseguiti backup precedenti.
+
+Per migliorare i risultati della ricerca, utilizzare i seguenti criteri:
+
+* Minimo tre caratteri
+
+
+
+NOTE: Se si immettono più di 3 caratteri, i risultati della ricerca precedente per 3 caratteri potrebbero rimanere nei risultati della ricerca.
+
+* Inserimento alfanumerico
+* Virgolette singole per una corrispondenza esatta di una parola, una stringa di parole o un numero. Es.: "Budget 2014".
+
+
+Seguire i passaggi riportati di seguito per cercare le istanze protette.
+
+.Fasi
+. Dalla dashboard, fare clic sul numero riportato sopra *Protected* in qualsiasi servizio in cui si desidera effettuare la ricerca.image:number_protected_unprotected_highlight_protected.gif["schermata delle istanze protette evidenziate"]
+. Individuare la casella di ricerca nell'angolo superiore destro della pagina.image:search_box_exchange.png["Schermata della casella di ricerca in Exchange Online"]
++
+Quindi, immettere le informazioni visualizzate nella casella di ricerca, ad esempio "nome" o "e-mail" nella casella di ricerca.image:search_box_exchange_prompts.png["Schermata della casella di ricerca con le richieste di ricerca in Exchange Online"]
+
++
+.. Cerca Microsoft Exchange Online in base al nome o all'indirizzo e-mail.
+.. Cerca Microsoft OneDrive for Business in base al nome, all'indirizzo e-mail o a MySite.
+.. Cerca Microsoft SharePoint Online in base al nome del sito o all'URL.
+.. Cerca gruppi e team Microsoft 365 in base al nome del gruppo o del team.
+
+
+. Verranno visualizzati i risultati che corrispondono ai criteri di ricerca.
+
+
+È inoltre possibile eseguire una ricerca a livelli più granulari all'interno di ciascun servizio. Se viene visualizzato un menu a discesa a destra della casella di ricerca, selezionare *file* o *cartella* dal menu a discesa per restringere i risultati della ricerca.
+
+image:search_box_dropdown_menu_file&folder.png["casella di ricerca con menu a discesa file/cartella"]
