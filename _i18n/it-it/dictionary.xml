@@ -375,7 +375,6 @@
   <block id="5a9fa37a8adc9079710c82bebd381be2" category="list-text">EHS n. 1 (sito principale)</block>
   <block id="a1c702db865ff7988cecde653d31e549" category="list-text">EHS n. 0 (sito principale)</block>
   <block id="e69fe81e6c14067bfa02448cc56f0d90" category="list-text">Numero di serie 0 (sito di comunicazione)</block>
-  <block id="cd6b1dceac9feb15ce679e63c41ec14b" category="list-text">GRUPPO n. 0 (prefisso raccolta siti gruppo)</block>
   <block id="02331da6f964bf5a355bef176199392c" category="list-text">N. STS 1 (sito vuoto)</block>
   <block id="370f28e84c7e5f280c6384763af39ff8" category="list-text">STS 2 (Area di lavoro documenti)</block>
   <block id="bb39ae34f785130781c5d7c8f66840ca" category="list-text">STS n. 3 (sito moderno del team)</block>
@@ -1357,4 +1356,8 @@
   <block id="6dcf112116eaaafdcd1b045888627786" category="sidebar">Eliminazione dei dati dell'abbonamento a pagamento</block>
   <block id="013131a779f73f268793ce1212aee294" category="sidebar">A proposito di Self Service Portal</block>
   <block id="d707bbc05400b2ce6b59ba216d70b5aa" category="sidebar">USA il portale self-service</block>
+  <block id="ecdf921a3a6a074b60616280efaea786" category="list-text">SPERS n. 10 (siti personali)</block>
+  <block id="f381330caab1211a505b46814d00dafe" category="list-text">BLANKINTERNET n. 0 (sito di pubblicazione)</block>
+  <block id="b6402d0dbe2678a6ff7d1ebe657c7846" category="list-text">TEAMCHANNEL 0</block>
+  <block id="f240a6450359519ca5f7b84a102e94a3" category="list-text">TEAMCHANNEL n. 1 (canale team privato)</block>
 </blocks>

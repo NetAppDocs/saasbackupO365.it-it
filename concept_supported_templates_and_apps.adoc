@@ -38,11 +38,14 @@ Per i backup di Microsoft SharePoint Online sono supportati solo i seguenti mode
 * EHS n. 1 (sito principale)
 * EHS n. 0 (sito principale)
 * Numero di serie 0 (sito di comunicazione)
-* GRUPPO n. 0 (prefisso raccolta siti gruppo)
+* SPERS n. 10 (siti personali)
 * N. STS 1 (sito vuoto)
 * STS 2 (Area di lavoro documenti)
 * STS n. 3 (sito moderno del team)
 * APP n. 0 (modello applicazione)
+* BLANKINTERNET n. 0 (sito di pubblicazione)
+* TEAMCHANNEL 0
+* TEAMCHANNEL n. 1 (canale team privato)
 
 
 
