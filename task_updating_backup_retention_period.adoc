@@ -5,17 +5,14 @@ keywords: netapp, saas backup, microsoft 365, backup, retention, period, update,
 summary: È possibile aggiornare il periodo di tempo, in anni, in cui i dati vengono conservati per singoli livelli, caselle postali, siti e siti MySites a 7 anni, 10 anni o senza limiti. 
 ---
 = Aggiornare il periodo di conservazione del backup
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

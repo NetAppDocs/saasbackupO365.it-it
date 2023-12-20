@@ -5,17 +5,14 @@ keywords: netapp, saas backup, microsoft 365, getting started, paid, subscriptio
 summary: Per iniziare con un abbonamento a pagamento per SaaS Backup per Microsoft 365, devi decidere quale tipo di storage utilizzare per i backup, creare un account di servizio Microsoft 365 con autorizzazioni globali e completare il processo di iscrizione. 
 ---
 = Workflow per iniziare
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

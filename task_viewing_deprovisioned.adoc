@@ -5,17 +5,14 @@ keywords: netapp, saas backup, microsoft 365, view, viewing, jobs, deprovisioned
 summary: È possibile visualizzare un elenco di caselle postali o account utente che sono stati eliminati. 
 ---
 = Visualizzare un elenco di elementi sottoposti a deprovisioning
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
